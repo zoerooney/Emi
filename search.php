@@ -27,7 +27,10 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
+				<nav id="nav-below">
+					<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&#171;</span> Older posts', 'twentyeleven' ) ); ?></div>
+					<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&#187;</span>', 'twentyeleven' ) ); ?></div>
+				</nav><!-- #nav-above -->
 
 			<?php else : ?>
 

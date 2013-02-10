@@ -40,6 +40,11 @@ body {
 	width: 600px;
 	float: left;
 }
+#primary.full-width,
+#primary.full-width #content {
+	width: 100%;
+	float: none;
+}
 #secondary {
 	float: right;
 	padding: 0;

@@ -67,7 +67,7 @@
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">			
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" id="logo" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" id="logo" alt="" />
 			</a>
 			<nav id="access" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
