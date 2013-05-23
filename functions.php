@@ -347,3 +347,43 @@ add_filter( 'body_class', 'twentyeleven_body_classes' );
 //}    
 // 
 //add_action('wp_enqueue_scripts', 'twentyeleven_scripts_method');
+
+
+/**
+ * Add TinyMCE buttons that are disabled by default
+ */
+//function twentyeleven_mce_buttons_2($buttons) {	
+//	/**
+//	 * Add in a core button that's disabled by default
+//	 */
+//	$buttons[] = 'justify'; // fully justify text
+//	$buttons[] = 'hr'; // insert HR
+//
+//	return $buttons;
+//}
+//add_filter('mce_buttons_2', 'twentyeleven_mce_buttons_2');
+
+
+/**
+ * Remove all colors except those custom colors specified from TinyMCE
+ */
+//function twentyeleven_change_mce_options( $init ) {
+//	$init['theme_advanced_text_colors'] = '8dc63f';
+//	$init['theme_advanced_more_colors'] = false;
+//return $init;
+//}
+//add_filter('tiny_mce_before_init', 'twentyeleven_change_mce_options');
+
+
+/**
+ * Only show posts in search results
+ */
+//function twentyeleven_SearchFilter($query) {
+//    if ($query->is_search) {
+//        $query->set('post_type', 'post');
+//    }
+//    return $query;
+//}
+//add_filter('pre_get_posts','twentyeleven_SearchFilter');
+
+require_once('inc/aq_resizer.php'); // On the fly image resizing, docs at https://github.com/sy4mil/Aqua-Resizer/wiki/Examples

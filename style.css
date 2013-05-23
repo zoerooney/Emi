@@ -1,5 +1,5 @@
 /*
-Theme Name: SITENAME
+Theme Name: Twenty Eleven
 Theme URI: http://SITEURL.com
 Author: Zoe Rooney
 Author URI: http://zoerooney.com/
@@ -37,7 +37,7 @@ body {
 }
 #content {
 	margin: 0;
-	width: 600px;
+	width: 100%;
 	float: left;
 }
 #primary.full-width,
@@ -616,25 +616,6 @@ object {
 
 /* =Comments
 ----------------------------------------------- */
-.comments-link a {
-	color: LINKHOVER;
-	font-size: 14px;
-	text-transform:uppercase;
-}
-.comments-link a:hover {
-	text-decoration: none;
-}
-.single .post.hentry {
-	margin: 0 0 20px;
-	padding: 0;
-}
-.single .comments-link {
-	margin-bottom: 20px;
-}
-.single .comments-link a, .comment-form-title {
-	font-size: 18px;
-	color: LINKHOVER;
-}
 .comment-form-title {
 	margin:  30px 0 10px;
 }

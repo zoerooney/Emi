@@ -2,26 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>SITENAME</title>
-	<meta http-equiv="REFRESH" content="0;url=OLDSITEURL">
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<title>Twenty Eleven</title>
 
-	<link rel="icon" type="image/ico" href="favicon.ico" />
-	<link href="<?php echo get_template_directory_uri(); ?>/fonts/stylesheet.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/ico" href="/wp-content/themes/twentyeleven/favicon.ico" />
 	<style type="text/css">
 	
 	body {
 		background: #FFF;
-		font-family: 'Raleway';
-		font-size: 16px;
+		font-family: sans-serif;
+		font-size: 9px;
 		color: #000;
 		width: 100%;
 	}
 	#page {
-		width: 200px;
-		margin: 20px auto;
+		width: WIDTH;
+		margin: 60px auto;
 		text-align: center;
 	}
 	#logo {
@@ -33,7 +28,8 @@
 </head>
 <body>
 	<div id="page">
-		You are being redirected to SITENAME
+		<img src="/wp-content/themes/twentyeleven/images/twentyeleven.png" alt="Twenty Eleven" id="logo" />
+		COMING SOON
 	</div>
 </body>
 </html>
