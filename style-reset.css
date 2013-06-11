@@ -44,6 +44,24 @@ ul.unstyled {
 	margin:0!important;
 }
 
+/* =Force Element To Self-Clear its Children
+----------------------------------------------- */
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
 /* 2 RESETS
 ================================================== */
 
@@ -128,4 +146,3 @@ textarea {
 ================================================== */
 
 .alert { background:red; color:white } /* 'alert' has a basic style, since it's useful to have it standing out for testing purposes.
-v
