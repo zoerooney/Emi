@@ -65,19 +65,39 @@ body, input, textarea {
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
 }
+h1 {
+	
+}
+h2 {
+	
+}
+h3 {
+	
+}
+h4 {
+	
+}
+h5 {
+	
+}
+h6 {
+	
+}
+
+
 hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.625em;
+	margin-bottom: 1.5em;
 }
 
 /* Text elements */
 p {
-	margin-bottom: 1.625em;
+	margin-bottom: 1.5em;
 }
 ul, ol {
-	margin: 0 0 1.625em 2.5em;
+	margin: 0 0 1.5em 2.5em;
 }
 ul {
 	list-style: square;
@@ -98,12 +118,12 @@ ul ul, ol ol, ul ol, ol ul {
 	margin-bottom: 0;
 }
 dl {
-	margin: 0 1.625em;
+	margin: 0 1.5em;
 }
 dt {
 }
 dd {
-	margin-bottom: 1.625em;
+	margin-bottom: 1.5em;
 }
 strong {
 }
@@ -126,9 +146,9 @@ cite {
 pre {
 	background: #f4f4f4;
 	line-height: 1.5;
-	margin-bottom: 1.625em;
+	margin-bottom: 1.5em;
 	overflow: auto;
-	padding: 0.75em 1.625em;
+	padding: 0.75em 1.5em;
 }
 code, kbd {
 	font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
@@ -139,7 +159,7 @@ abbr, acronym, dfn {
 }
 address {
 	display: block;
-	margin: 0 0 1.625em;
+	margin: 0 0 1.5em;
 }
 ins {
 	background: #fff9c0;
@@ -285,6 +305,8 @@ a:hover {
 	color: LINKHOVER;
 }
 
+
+
 /* =Content
 ----------------------------------------------- */
 
@@ -322,28 +344,10 @@ a:hover {
 .entry-summary {
 	padding: 20px 0 0;
 }
-.entry-content h1,
-.comment-content h1,
-.comment-content h2 {
-	color: LINKCOLOR;
-	font-size: 21px;
-	margin: 0 0 .8125em;
-}
-.entry-content h2 {
-	color: LINKCOLOR;
-	line-height: 1.4em;
-	margin-bottom: 18px;
-	font-size: 18px;
-}
-.entry-content h3,
-.comment-content h3 {
-	font-size: 16px;
-	line-height: 2.6em;
-}
 .entry-content table,
 .comment-content table {
 	border-bottom: 1px solid #ddd;
-	margin: 0 0 1.625em;
+	margin: 0 0 1.5em;
 	width: 100%;
 }
 .entry-content th,
@@ -363,7 +367,7 @@ a:hover {
 }
 .comment-content ul,
 .comment-content ol {
-	margin-bottom: 1.625em;
+	margin-bottom: 1.5em;
 }
 .comment-content ul ul,
 .comment-content ol ol,
@@ -377,7 +381,7 @@ dl.gallery-item {
 .page-link {
 	clear: both;
 	display: block;
-	margin: 0 0 1.625em;
+	margin: 0 0 1.5em;
 }
 .page-link span {
 	margin-right: 6px;
@@ -402,7 +406,8 @@ dl.gallery-item {
 
 /* Images */
 .entry-content img,
-.comment-content img {
+.comment-content img,
+.widget img {
 	max-width: 100%; /* Fluid images for posts, comments, and widgets */
 }
 img[class*="align"],
@@ -416,9 +421,7 @@ img.size-large {
 	width: auto; /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */
 	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
-.widget img {
-	max-width: 250px; /* Fluid images for posts, comments, and widgets */
-}
+
 .entry-content img.wp-smiley {
 	border: none;
 	margin-bottom: 0;
@@ -428,14 +431,14 @@ img.size-large {
 img.alignleft,
 img.alignright,
 img.aligncenter {
-	margin-bottom: 1.625em;
+	margin-bottom: 1.5em;
 }
 p img,
 .wp-caption {
 	margin-top: 0.4em;
 }
 .wp-caption {
-	margin-bottom: 1.625em;
+	margin-bottom: 1.5em;
 }
 .wp-caption img {
 	display: block;
@@ -452,7 +455,7 @@ p img,
 	position: relative;
 }
 #content .gallery {
-	margin: 0 auto 1.625em;
+	margin: 0 auto 1.5em;
 }
 #content .gallery a img {
 	border: none;
@@ -467,7 +470,7 @@ p img,
 }
 img#wpstats {
 	display: block;
-	margin: 0 auto 1.625em;
+	margin: 0 auto 1.5em;
 }
 
 /* Image borders */
@@ -485,7 +488,7 @@ object {
 
 /* Password Protected Posts */
 .post-password-required .entry-header .comments-link {
-	margin: 1.625em 0 0;
+	margin: 1.5em 0 0;
 }
 .post-password-required input[type=password] {
 	margin: 0.8125em 0;
@@ -496,7 +499,7 @@ object {
 /* =error404
 ----------------------------------------------- */
 .error404 #main #s {
-	width: 95%;
+	width: 75%;
 }
 
 
@@ -506,7 +509,7 @@ object {
 #content nav {
 	clear: both;
 	overflow: hidden;
-	padding: 0 0 1.625em;
+	padding: 0 0 1.5em;
 }
 #nav-below {
 }
@@ -708,7 +711,7 @@ a.comment-reply-link {
 
 /* Comment Form */
 #respond {
-	margin: 0 auto 1.625em;
+	margin: 0 auto 1.5em;
 	padding: 10px;
 	position: relative;
 	width: 580px;
@@ -779,14 +782,14 @@ a.comment-reply-link {
 	text-decoration: none;
 }
 .commentlist #respond {
-	margin: 1.625em 0 0;
+	margin: 1.5em 0 0;
 	width: auto;
 }
 #cancel-comment-reply-link {
 	color: TEXTCOLOR;
 	display: block;
 	position: absolute;
-	right: 1.625em;
+	right: 1.5em;
 	text-decoration: none;
 	top: 1.1em;
 }
@@ -823,6 +826,8 @@ p.comment-form-comment {
 #site-generator a {
 	color: LINKCOLOR;
 }
+
+
 
 /* =IE7
 ----------------------------------------------- */
