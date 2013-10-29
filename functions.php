@@ -6,32 +6,7 @@
  * are used in the theme as custom template tags. Others are attached to action and
  * filter hooks in WordPress to change core functionality.
  *
- * The first function, twentyeleven_setup(), sets up the theme by registering support
- * for various features in WordPress, such as post thumbnails, navigation menus, and the like.
  *
- * When using a child theme (see http://codex.wordpress.org/Theme_Development and
- * http://codex.wordpress.org/Child_Themes), you can override certain functions
- * (those wrapped in a function_exists() call) by defining them first in your child theme's
- * functions.php file. The child theme's functions.php file is included before the parent
- * theme's file, so the child theme functions would be used.
- *
- * Functions that are not pluggable (not wrapped in function_exists()) are instead attached
- * to a filter or action hook. The hook can be removed by using remove_action() or
- * remove_filter() and you can attach your own function to the hook.
- *
- * We can remove the parent theme's hook only after it is attached, which means we need to
- * wait until setting up the child theme:
- *
- * <code>
- * add_action( 'after_setup_theme', 'my_child_theme_setup' );
- * function my_child_theme_setup() {
- *     // We are providing our own filter for excerpt_length (or using the unfiltered value)
- *     remove_filter( 'excerpt_length', 'twentyeleven_excerpt_length' );
- *     ...
- * }
- * </code>
- *
- * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
  * @package WordPress
  * @subpackage Twenty_Eleven
@@ -95,20 +70,10 @@ function twentyeleven_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Add custom image sizes
-	add_image_size( 'small-feature', 500, 300 ); // Used for featured posts if a large-feature doesn't exist
+	// add_image_size( 'name', 500, 300 );
 }
 endif; // twentyeleven_setup
 
-/**
- * Sets the post excerpt length to 40 words.
- *
- * To override this length in a child theme, remove the filter and add your own
- * function tied to the excerpt_length filter hook.
- */
-function twentyeleven_excerpt_length( $length ) {
-	return 40;
-}
-add_filter( 'excerpt_length', 'twentyeleven_excerpt_length' );
 
 /**
  * Returns a "Continue Reading" link for excerpts
@@ -120,8 +85,6 @@ function twentyeleven_continue_reading_link() {
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and twentyeleven_continue_reading_link().
  *
- * To override this in a child theme, remove the filter and add your own
- * function tied to the excerpt_more filter hook.
  */
 function twentyeleven_auto_excerpt_more( $more ) {
 	return ' &hellip;' . twentyeleven_continue_reading_link();
@@ -142,17 +105,9 @@ function twentyeleven_custom_excerpt_more( $output ) {
 }
 add_filter( 'get_the_excerpt', 'twentyeleven_custom_excerpt_more' );
 
-/**
- * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
- */
-function twentyeleven_page_menu_args( $args ) {
-	$args['show_home'] = true;
-	return $args;
-}
-add_filter( 'wp_page_menu_args', 'twentyeleven_page_menu_args' );
 
 /**
- * Register our sidebars and widgetized areas. Also register the default Epherma widget.
+ * Register our sidebars and widgetized areas.
  *
  * @since Twenty Eleven 1.0
  */
@@ -169,64 +124,6 @@ function twentyeleven_widgets_init() {
 }
 add_action( 'widgets_init', 'twentyeleven_widgets_init' );
 
-if ( ! function_exists( 'twentyeleven_content_nav' ) ) :
-/**
- * Display navigation to next/previous pages when applicable
- */
-function twentyeleven_content_nav( $nav_id ) {
-	global $wp_query;
-
-	if ( $wp_query->max_num_pages > 1 ) : ?>
-		<?php wp_simple_pagination(); ?>
-	<?php endif;
-}
-endif; // twentyeleven_content_nav
-
-/**
- * Return the URL for the first link found in the post content.
- *
- * @since Twenty Eleven 1.0
- * @return string|bool URL or false when no link is present.
- */
-function twentyeleven_url_grabber() {
-	if ( ! preg_match( '/<a\s[^>]*?href=[\'"](.+?)[\'"]/is', get_the_content(), $matches ) )
-		return false;
-
-	return esc_url_raw( $matches[1] );
-}
-
-/**
- * Count the number of footer sidebars to enable dynamic classes for the footer
- */
-function twentyeleven_footer_sidebar_class() {
-	$count = 0;
-
-	if ( is_active_sidebar( 'sidebar-3' ) )
-		$count++;
-
-	if ( is_active_sidebar( 'sidebar-4' ) )
-		$count++;
-
-	if ( is_active_sidebar( 'sidebar-5' ) )
-		$count++;
-
-	$class = '';
-
-	switch ( $count ) {
-		case '1':
-			$class = 'one';
-			break;
-		case '2':
-			$class = 'two';
-			break;
-		case '3':
-			$class = 'three';
-			break;
-	}
-
-	if ( $class )
-		echo 'class="' . $class . '"';
-}
 
 if ( ! function_exists( 'twentyeleven_comment' ) ) :
 /**
@@ -296,25 +193,6 @@ function twentyeleven_comment( $comment, $args, $depth ) {
 }
 endif; // ends check for twentyeleven_comment()
 
-if ( ! function_exists( 'twentyeleven_posted_on' ) ) :
-/**
- * Prints HTML with meta information for the current post-date/time and author.
- * Create your own twentyeleven_posted_on to override in a child theme
- *
- * @since Twenty Eleven 1.0
- */
-function twentyeleven_posted_on() {
-	printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'twentyeleven' ),
-		esc_url( get_permalink() ),
-		esc_attr( get_the_time() ),
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		esc_attr( sprintf( __( 'View all posts by %s', 'twentyeleven' ), get_the_author() ) ),
-		get_the_author()
-	);
-}
-endif;
 
 /**
  * Adds two classes to the array of body classes.
@@ -334,6 +212,13 @@ function twentyeleven_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
+
+
+/**
+ * REMOVE ADMIN BAR FOR ALL USERS
+ */
+show_admin_bar( false );
+
 
 /**
  * ENQUEUE SCRIPTS
@@ -385,5 +270,3 @@ add_filter( 'body_class', 'twentyeleven_body_classes' );
 //    return $query;
 //}
 //add_filter('pre_get_posts','twentyeleven_SearchFilter');
-
-require_once('inc/aq_resizer.php'); // On the fly image resizing, docs at https://github.com/sy4mil/Aqua-Resizer/wiki/Examples
