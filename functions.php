@@ -270,3 +270,9 @@ show_admin_bar( false );
 //    return $query;
 //}
 //add_filter('pre_get_posts','twentyeleven_SearchFilter');
+
+/**
+ * On the fly image resizing
+ * docs at https://github.com/sy4mil/Aqua-Resizer/wiki/Examples
+ */
+// require_once('inc/aq_resizer.php');
