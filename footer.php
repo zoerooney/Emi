@@ -14,7 +14,8 @@
 
 	<footer id="colophon" role="contentinfo">
 			<div id="site-generator">
-				&copy; <?php echo date('Y'); echo bloginfo( 'name' ); ?><a href="http://zoerooney.com" target="_blank">Development by Zoe Rooney</a>
+				&copy; <?php echo date('Y'); echo '&nbsp;'; echo bloginfo( 'name' ); ?><br>
+				Site by <a href="http://" target="_blank">DESIGNER</a> &amp; <a href="http://zoerooney.com" target="_blank">Development by Zoe Rooney</a>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
