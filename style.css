@@ -6,7 +6,6 @@ Author URI: http://zoerooney.com/
 Description: Custom theme designed by <a href="http://DESIGNERURL" target="_blank">DESIGNER</a>
 */
 
-@import "style-reset.css";
 
 /* 
 color: TEXTCOLOR;
@@ -14,21 +13,36 @@ color: LINKCOLOR;
 color: LINKHOVER;
 */
 
+
+/* RESET
+ ----------------------------------------------- */
+div{position:relative}.clear{clear:both}.aligncenter{display:block;margin:0 auto}.textcenter{text-align:center}.alignleft{float:left}.alignright{float:right}img.alignleft{margin-right:1em;margin-bottom:1.8em}img.alignright{margin-left:1em;margin-bottom:1.8em}.text-right{text-align:right}.half{width:45%}ul.unstyled{list-style-type:none}.hide{visibility:hidden;width:0!important;height:0!important;line-height:0!important;padding:0!important;margin:0!important}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}* html .clearfix{height:1%}.clearfix{display:block}*,address,blockquote,body,caption,cite,code,dd,dfn,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,input,label,li,ol,p,pre,strong,td,th,ul,var{margin:0;padding:0;border:0;font-style:normal;font-family:inherit;font-size:100%}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}table{border-collapse:collapse;border-spacing:0}fieldset{border:0}img{border:0;-ms-interpolation-mode:bicubic}caption,th{text-align:center}q:after,q:before{content:''}html{overflow-y:scroll;font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}strong{font-weight:700}em{font-style:italic}a img{border:0}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal;*overflow:visible}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}button,input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button}input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;vertical-align:top}.alert{background:red;color:#fff}
+
+
 /* =Structure
 ----------------------------------------------- */
+html, body {
+	height: 100%;
+}
 body {
 	background: #FFF;
+	margin: 0;
 	padding: 0;
 }
 #page {
-	margin: 0 auto;
+	min-height: 100%;
 	width: 1000px;
-	overflow: hidden;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -50px;
 }
 #main {
 	clear: both;
-	padding: 0;
+	padding: 0 0 50px;
 	overflow: hidden;
+}
+#colophon {
+	height: 50px;
 }
 #primary {
 	float: left;
@@ -814,7 +828,6 @@ p.comment-form-comment {
 #colophon {
 	clear: both;
 	overflow: hidden;
-	padding-bottom: 20px;
 }
 
 /* Site Generator Line */

@@ -35,7 +35,7 @@ ul.unstyled {
 	list-style-type: none;
 }
 
-.hide{ /* Hide stuff without resorting to display:none; */
+.hide { /* Hide stuff without resorting to display:none; */
 	visibility:hidden;
 	width:0!important;
 	height:0!important;
