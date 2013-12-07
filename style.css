@@ -452,6 +452,8 @@ p img,
 	margin-top: 0.4em;
 }
 .wp-caption {
+	max-width: 100%;
+	height: auto;
 	margin-bottom: 1.5em;
 }
 .wp-caption img {
