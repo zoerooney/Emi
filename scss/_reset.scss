@@ -18,6 +18,10 @@
   (B) http://csswizardry.com/web-design+/#css
   (C) WordPress image styles */
 
+html, body {
+	height: 100%;
+}
+
 div {
   position: relative;
 }

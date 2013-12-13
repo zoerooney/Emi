@@ -3,8 +3,8 @@
  * Home Page
  *
  * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
+ * @subpackage emi_theme
+ * @since Emi Theme 1.0
  */
 
 get_header(); ?>
@@ -21,7 +21,7 @@ get_header(); ?>
 					
 						<div class="entry-content">
 							<?php the_content(); ?>
-							<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
+							<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'emitheme' ) . '</span>', 'after' => '</div>' ) ); ?>
 						</div><!-- .entry-content -->
 					</article><!-- #post-<?php the_ID(); ?> -->
 
