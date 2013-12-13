@@ -1,0 +1,45 @@
+body {
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+}
+#page {
+	min-height: 100%;
+	width: 1000px;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -50px;
+}
+#main {
+	clear: both;
+	padding: 0 0 50px;
+	overflow: hidden;
+}
+#colophon {
+	height: 50px;
+}
+#primary {
+	float: left;
+	margin: 0;
+	width: 600px;	
+}
+#content {
+	margin: 0;
+	width: 100%;
+	float: left;
+}
+#primary.full-width,
+#primary.full-width #content {
+	width: 100%;
+	float: none;
+}
+#secondary {
+	float: right;
+	padding: 0;
+	width: 250px;
+}
+
+#colophon {
+	clear: both;
+	overflow: hidden;
+}
