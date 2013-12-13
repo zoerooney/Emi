@@ -21,6 +21,4 @@ Thumbs.db
 *.esproj
 *.sass-cache
 *.ruby-version
-
-# Ignore Grunt dependency files
 node_modules
