@@ -5,7 +5,7 @@ textarea {
 	font-size: 13px;
 	height: 19px;
 	line-height: 1.2em;
-	padding: 4px 10px !;
+	padding: 4px 10px;
 }
 input[type=text]:focus,
 textarea:focus {
@@ -28,4 +28,7 @@ input#searchsubmit {
 	width: 33px;
 	height: 21px;
 	margin-left: 10px;
+}
+::placeholder {
+	color: TEXTCOLOR;
 }
