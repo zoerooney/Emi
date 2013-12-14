@@ -7,17 +7,14 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		
-		sass: {
-	      dist: {
-	        options: {
-	          // cssmin will minify later
-	          style: 'expanded'
-	        },
-	        files: {
-	          'style.css': 'scss/style.scss'
-	        }
-	      }
-	    },
+		compass: {
+		    dist: {
+		      options: {
+		        sassDir: 'scss',
+		        cssDir: '.'
+		      }
+		    }
+		},
 	    autoprefixer: {
 	        dist: {
 	            files: {
@@ -64,10 +61,10 @@ module.exports = function(grunt) {
 	        }
 		},
 		watch: {
-		   sass: {
+		   css: {
 	         // We watch and compile sass files as normal but don't live reload here
-	         files: ['scss/*.scss'],
-	         tasks: ['sass'],
+	         files: ['**/*.scss'],
+	         tasks: ['compass'],
 	       },
 	       styles: {
 	           files: ['style.css'],
@@ -91,6 +88,6 @@ module.exports = function(grunt) {
 	});
 	
 	// Tells Grunt what to do when we type in "grunt" in Terminal
-	grunt.registerTask('default', ['sass','autoprefixer','imagemin','cssmin',]);
+	grunt.registerTask('default', ['compass','autoprefixer','imagemin','cssmin',]);
 
 };
