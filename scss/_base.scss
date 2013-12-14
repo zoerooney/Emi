@@ -1,0 +1,25 @@
+$color-body: #555;
+$color-links: blue;
+$color-hover: red;
+
+
+$width: 1000px;
+$width-outer: $width + 30px;
+
+
+@import "compass/utilities";
+@import "compass/layout/sticky-footer";
+@import "compass/typography/lists";
+@import "compass/typography/text";
+
+// media queries
+@import "breakpoint";
+
+$bp-tiny: 320px;
+// Example usage
+// http://breakpoint-sass.com/
+// .foo {
+//    @include breakpoint($bp-tiny){
+//      width: 100%;
+//    }
+//  }
