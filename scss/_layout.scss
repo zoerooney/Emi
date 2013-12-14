@@ -2,21 +2,19 @@ body {
 	background: #FFF;
 	margin: 0;
 	padding: 0;
+	min-width: $width-outer;
 }
 #page {
-	min-height: 100%;
-	width: 1000px;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -50px;
+	width: $width;
+	padding: 0 15px;
 }
 #main {
 	clear: both;
-	padding: 0 0 50px;
 	overflow: hidden;
 }
 // Sticky footer
-@include sticky-footer(50px);
+@include sticky-footer(50px, '#page','#main','#colophon');
+
 #primary {
 	float: left;
 	margin: 0;
