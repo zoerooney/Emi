@@ -33,6 +33,11 @@ License URI: http://opensource.org/licenses/MIT
 /* Includes password protection for pages and posts, 404 page */
 @import 'components';
 
+
+/* =PROJECT PAGES SPECIFIC
+------------------ */
+@import 'pages';
+
 /* =BLOG SPECIFIC
 ------------------ */
 @import 'blog/paging';

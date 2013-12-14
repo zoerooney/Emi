@@ -379,14 +379,14 @@ body {
   overflow: hidden;
 }
 
-/* line 10, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 10, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/layout/_sticky-footer.scss */
 
 html,
 body {
   height: 100%;
 }
 
-/* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/layout/_sticky-footer.scss */
 
 #page {
   clear: both;
@@ -396,13 +396,13 @@ body {
   margin-bottom: -50px;
 }
 
-/* line 18, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 18, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/layout/_sticky-footer.scss */
 
 #page #main {
   height: 50px;
 }
 
-/* line 20, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 20, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/layout/_sticky-footer.scss */
 
 #colophon {
   clear: both;
@@ -426,7 +426,7 @@ body {
   float: left;
 }
 
-/* line 29, scss/_layout.scss */
+/* line 28, scss/_layout.scss */
 
 #primary.full-width,
 #primary.full-width #content {
@@ -725,7 +725,7 @@ ins {
   text-decoration: none;
 }
 
-/* line 113, scss/_typography.scss */
+/* line 112, scss/_typography.scss */
 
 sup,
 sub {
@@ -757,7 +757,7 @@ a {
   text-decoration: none;
 }
 
-/* line 136, scss/_typography.scss */
+/* line 134, scss/_typography.scss */
 
 a:focus,
 a:active,
@@ -776,7 +776,7 @@ a:hover {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 150, scss/_typography.scss */
+/* line 149, scss/_typography.scss */
 
 #access a.assistive-text:active,
 #access a.assistive-text:focus {
@@ -788,7 +788,7 @@ a:hover {
   left: 7.6%;
 }
 
-/* line 3, scss/_forms.scss */
+/* line 1, scss/_forms.scss */
 
 input[type=text],
 input[type=password],
@@ -800,7 +800,7 @@ textarea {
   padding: 4px 10px;
 }
 
-/* line 11, scss/_forms.scss */
+/* line 10, scss/_forms.scss */
 
 input[type=text]:focus,
 textarea:focus {
@@ -861,14 +861,14 @@ input#searchsubmit {
   position: relative;
 }
 
-/* line 9, scss/_content.scss */
+/* line 8, scss/_content.scss */
 
 .page .hentry,
 .no-results {
   border-bottom: none;
 }
 
-/* line 13, scss/_content.scss */
+/* line 12, scss/_content.scss */
 
 .entry-title,
 .entry-title a {
@@ -900,14 +900,14 @@ input#searchsubmit {
   display: none;
 }
 
-/* line 33, scss/_content.scss */
+/* line 32, scss/_content.scss */
 
 .entry-content,
 .entry-summary {
   padding: 20px 0 0;
 }
 
-/* line 37, scss/_content.scss */
+/* line 36, scss/_content.scss */
 
 .entry-content table,
 .comment-content table {
@@ -916,7 +916,7 @@ input#searchsubmit {
   width: 100%;
 }
 
-/* line 43, scss/_content.scss */
+/* line 42, scss/_content.scss */
 
 .entry-content th,
 .comment-content th {
@@ -926,7 +926,7 @@ input#searchsubmit {
   line-height: 2.6em;
 }
 
-/* line 50, scss/_content.scss */
+/* line 49, scss/_content.scss */
 
 .entry-content td,
 .comment-content td {
@@ -940,14 +940,14 @@ input#searchsubmit {
   width: 75%;
 }
 
-/* line 58, scss/_content.scss */
+/* line 57, scss/_content.scss */
 
 .comment-content ul,
 .comment-content ol {
   margin-bottom: 1.5em;
 }
 
-/* line 64, scss/_content.scss */
+/* line 61, scss/_content.scss */
 
 .comment-content ul ul,
 .comment-content ol ol,
@@ -976,7 +976,7 @@ dl.gallery-item {
   margin-right: 6px;
 }
 
-/* line 79, scss/_content.scss */
+/* line 78, scss/_content.scss */
 
 .entry-meta .edit-link a,
 .commentlist .edit-link a {
@@ -999,7 +999,7 @@ dl.gallery-item {
 
 /* Images */
 
-/* line 99, scss/_content.scss */
+/* line 97, scss/_content.scss */
 
 .entry-content img,
 .comment-content img,
@@ -1008,7 +1008,7 @@ dl.gallery-item {
   /* Fluid images for posts, comments, and widgets */
 }
 
-/* line 104, scss/_content.scss */
+/* line 102, scss/_content.scss */
 
 img[class*="align"],
 img[class*="wp-image-"],
@@ -1017,7 +1017,7 @@ img[class*="attachment-"] {
   /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
 
-/* line 108, scss/_content.scss */
+/* line 107, scss/_content.scss */
 
 img.size-full,
 img.size-large {
@@ -1037,7 +1037,7 @@ img.size-large {
   padding: 0;
 }
 
-/* line 122, scss/_content.scss */
+/* line 120, scss/_content.scss */
 
 img.alignleft,
 img.alignright,
@@ -1045,7 +1045,7 @@ img.aligncenter {
   margin-bottom: 1.5em;
 }
 
-/* line 126, scss/_content.scss */
+/* line 125, scss/_content.scss */
 
 p img,
 .wp-caption {
@@ -1069,7 +1069,7 @@ p img,
   height: auto;
 }
 
-/* line 141, scss/_content.scss */
+/* line 140, scss/_content.scss */
 
 .wp-caption .wp-caption-text,
 .gallery-caption {
@@ -1128,7 +1128,7 @@ img#wpstats {
 
 /* Make sure embeds and iframes fit their containers */
 
-/* line 178, scss/_content.scss */
+/* line 176, scss/_content.scss */
 
 embed,
 iframe,
@@ -1163,6 +1163,9 @@ object {
 .error404 #main #s {
   width: 75%;
 }
+
+/* =PROJECT PAGES SPECIFIC
+------------------ */
 
 /* =BLOG SPECIFIC
 ------------------ */
@@ -1211,7 +1214,7 @@ object {
   z-index: 1;
 }
 
-/* line 33, scss/blog/_paging.scss */
+/* line 32, scss/blog/_paging.scss */
 
 #nav-single .nav-previous,
 #nav-single .nav-next {
@@ -1334,7 +1337,7 @@ object {
   padding: 0 0 2.6em;
 }
 
-/* line 8, scss/blog/_comments.scss */
+/* line 7, scss/blog/_comments.scss */
 
 .nopassword,
 .nocomments {
@@ -1352,7 +1355,7 @@ object {
   width: 100%;
 }
 
-/* line 20, scss/blog/_comments.scss */
+/* line 19, scss/blog/_comments.scss */
 
 .content .commentlist,
 .page-template-sidebar-page-php .commentlist {
@@ -1460,7 +1463,7 @@ a.comment-reply-link {
 
 /* Make sure we have room for our comment avatars */
 
-/* line 82, scss/blog/_comments.scss */
+/* line 81, scss/blog/_comments.scss */
 
 .page-template-sidebar-page-php .commentlist > li.comment,
 .page-template-sidebar-page-php.commentlist .pingback {
@@ -1488,7 +1491,7 @@ a.comment-reply-link {
   overflow: hidden;
 }
 
-/* line 100, scss/blog/_comments.scss */
+/* line 99, scss/blog/_comments.scss */
 
 #respond input[type="text"],
 #respond textarea {
@@ -1516,7 +1519,7 @@ a.comment-reply-link {
   border: 1px solid TEXTCOLOR;
 }
 
-/* line 121, scss/blog/_comments.scss */
+/* line 118, scss/blog/_comments.scss */
 
 #respond .comment-form-author,
 #respond .comment-form-email,
@@ -1526,7 +1529,7 @@ a.comment-reply-link {
   margin: 5px 0 0;
 }
 
-/* line 127, scss/blog/_comments.scss */
+/* line 126, scss/blog/_comments.scss */
 
 #respond input[type="text"]:focus,
 #respond textarea:focus {
@@ -1534,7 +1537,7 @@ a.comment-reply-link {
   z-index: 1;
 }
 
-/* line 134, scss/blog/_comments.scss */
+/* line 131, scss/blog/_comments.scss */
 
 #respond .comment-form-author label,
 #respond .comment-form-email label,
