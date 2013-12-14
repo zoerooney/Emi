@@ -10,27 +10,31 @@ License URI: http://opensource.org/licenses/MIT
 */
 
 
-/* RESET
- ----------------------------------------------- */
+/* RESET & BASE
+------------------ */
 @import 'reset';
+@import 'base';
 
-
-/* =SETUP
------------------------------------------------ */
+/* =LAYOUTS
+------------------ */
 @import 'layout';
-
 @import 'header';
 @import 'nav';
 @import 'footer';
 
+/* =CONTENT
+------------------ */
 @import 'typography';
 @import 'forms';
-
 @import 'content';
 
+/* =COMPONENTS
+------------------ */
 /* Includes password protection for pages and posts, 404 page */
 @import 'components';
 
+/* =BLOG SPECIFIC
+------------------ */
 @import 'blog/paging';
 @import 'blog/widgets';
 @import 'blog/comments';

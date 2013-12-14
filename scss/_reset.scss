@@ -81,32 +81,14 @@ ul.unstyled {
   margin: 0!important;
 }
 
-/* =Force Element To Self-Clear its Children
------------------------------------------------ */
-
-.clearfix {
-  &:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
+// clearfix
+// http://nicolasgallagher.com/micro-clearfix-hack/
+// http://css-tricks.com/snippets/css/clear-fix/
+@mixin clearfix {
+    content: "";
+    display: table;
     clear: both;
-    height: 0;
-  }
-  display: inline-block;
 }
-
-/* start commented backslash hack \*/
-
-* html .clearfix {
-  height: 1%;
-}
-
-.clearfix {
-  display: block;
-}
-
-/* close commented backslash hack */
 
 /* 2 RESETS
 ================================================== */

@@ -15,9 +15,8 @@ body {
 	padding: 0 0 50px;
 	overflow: hidden;
 }
-#colophon {
-	height: 50px;
-}
+// Sticky footer
+@include sticky-footer(50px);
 #primary {
 	float: left;
 	margin: 0;
