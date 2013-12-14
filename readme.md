@@ -20,7 +20,7 @@ Then, add a screenshot and you're ready to start!
 Workflow
 ------------
 This theme uses [Grunt](http://gruntjs.com/) to automate the following tasks:
-* SCSS concantenation
+* SCSS and COMPASS preprocessing (with [Breakpoint](http://breakpoint-sass.com/))
 * Auto browser prefixing (via [Autoprefixer](https://github.com/ai/autoprefixer))
 * Minifying CSS
 * Compressing Images
@@ -29,6 +29,9 @@ This theme uses [Grunt](http://gruntjs.com/) to automate the following tasks:
 It also watches changes to files for use with [LiveReload](http://livereload.com/)
 
 To make use of Grunt (assuming you have it installed already - if not, [this tutorial](http://24ways.org/2013/grunt-is-not-weird-and-hard/) is recommended as a starting place), open the unzipped theme directory in Terminal and run `npm install` to ensure you have all the required dependencies. Then, you just enter `grunt` in Terminal each time you'd like to run the tasks.
+
+
+Resources
 
 
 Changelog
