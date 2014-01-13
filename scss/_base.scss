@@ -8,7 +8,6 @@ $width-outer: $width + 30px;
 
 
 @import "compass/utilities";
-@import "compass/layout/sticky-footer";
 @import "compass/typography/lists";
 @import "compass/typography/text";
 
@@ -23,3 +22,26 @@ $bp-tiny: 320px;
 //      width: 100%;
 //    }
 //  }
+
+// sticky footer mixin
+@mixin sticky-footer($footer-height, $wrapper-selector: unquote("#wrapper"), $container-selector: unquote("#container"), $footer-selector: unquote("#footer")) {
+  html, body {
+    height: 100%;
+  }
+  body {
+  	margin: 0px;
+  	padding: 0px;
+  }
+  #{$wrapper-selector} {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -$footer-height;
+    #{$container-selector} {
+      padding: 0 0 $footer-height 0;
+    } 
+  }
+  #{$footer-selector} {
+    height: $footer-height; 
+  }
+}
