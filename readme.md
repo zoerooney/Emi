@@ -36,5 +36,6 @@ Resources
 
 Changelog
 ------------
+* 0.3 Added webfont mixins
 * 0.2 Added Grunt workflow
 * 0.1 Updated theme name and added structures for SASS
