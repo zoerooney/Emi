@@ -19,16 +19,16 @@ module.exports = function(grunt) {
 	    autoprefixer: {
 	        dist: {
 	            files: {
-	                'style.css': 'style.css'
+	                'style.max.css': 'style.max.css'
 	            }
 	        }
 	    },
 	    cssmin: {
 	      minify: {
 	        expand: true,
-	        src: [ 'style.css' ],
+	        src: [ 'style.max.css' ],
 	        dest: '.',
-	        ext: '.min.css'
+	        ext: '.css'
 	      }
 	    },
 		imagemin: {
@@ -62,21 +62,18 @@ module.exports = function(grunt) {
 	        }
 		},
 		watch: {
-		   css: {
-	         // We watch and compile sass files as normal but don't live reload here
-	         files: ['**/*.scss'],
-	         tasks: ['compass'],
-	       },
-	       styles: {
-	           files: ['style.css'],
-	           tasks: ['autoprefixer']
-	       },
-	       livereload: {
-	         // Here we watch the files the sass task will compile to
-	         // These files are sent to the live reload server after sass compiles to them
-	         options: { livereload: true },
-	         files: ['*'],
-	       },
+		   compass: {
+				files: ['**/*.scss'],
+				tasks: ['compass'],
+			},
+			csspostprocess: {
+				files: 'style.max.css',
+				tasks: ['autoprefixer', 'cssmin'],
+			},
+			livereload: {
+				options: { livereload: true },
+				files: ['style.css'],
+			},
 		},
 		  
 	  	concat: {
@@ -90,5 +87,5 @@ module.exports = function(grunt) {
 	
 	// Tells Grunt what to do when we type in "grunt" in Terminal
 	grunt.registerTask('default', ['compass','autoprefixer','imagemin','cssmin',]);
-
+	 grunt.registerTask('dev', ['watch']);
 };

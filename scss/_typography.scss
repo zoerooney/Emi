@@ -1,3 +1,34 @@
+/* Web fonts integration*/
+
+@mixin font-face($font-family, $file-path, $font-weight: normal, $font-style: normal) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+
+@include font-face(name1, 'inc/fonts/filename');
+@include font-face(name2, 'inc/fonts/filename');
+
+@mixin name1 {
+  font-family: 'name1', sans-serif;
+  font-weight: normal; font-style: normal; 
+}
+
+@mixin name2 {
+  font-family: 'name2', sans-serif;
+  font-weight: normal; font-style: normal; 
+}
+
+
+/* Styling starts here */
+
 body, input, textarea {
 	color: TEXTCOLOR;
 	font-family: sans-serif;
