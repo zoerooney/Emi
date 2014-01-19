@@ -12,7 +12,8 @@ module.exports = function(grunt) {
 		      options: {
 		        sassDir: 'scss',
 		        cssDir: '.',
-		        require: 'breakpoint'
+		        // require: 'breakpoint',
+		        // environment: 'production'
 		      }
 		    }
 		},
@@ -63,20 +64,20 @@ module.exports = function(grunt) {
 		},
 		watch: {
 		   compass: {
-				files: ['**/*.scss'],
-				tasks: ['compass'],
+				files: ['scss/{,*/}*.scss'],
+				tasks: ['compass:dist']
 			},
 			csspostprocess: {
 				files: 'style.max.css',
-				tasks: ['autoprefixer', 'cssmin'],
+				tasks: ['autoprefixer', 'cssmin']
 			},
 			livereload: {
 				options: { livereload: true },
-				files: ['style.css'],
+				files: ['scss/{,*/}*.scss', '*.php', 'images/*']
 			},
 		},
 		  
-	  	concat: {
+	  concat: {
 			// concat task configuration goes here.
 		},
 		uglify: {
@@ -86,6 +87,7 @@ module.exports = function(grunt) {
 	});
 	
 	// Tells Grunt what to do when we type in "grunt" in Terminal
-	grunt.registerTask('default', ['compass','autoprefixer','imagemin','cssmin',]);
-	 grunt.registerTask('dev', ['watch']);
+	grunt.registerTask('default', ['compass','autoprefixer','imagemin','cssmin']);
+	grunt.registerTask('dev', ['watch']);
+
 };
