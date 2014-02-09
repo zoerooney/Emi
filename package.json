@@ -1,16 +1,14 @@
 {
-  "name": "emi-theme",
-  "version": "0.1.0",
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.6",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-imagemin": "~0.4.0",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "load-grunt-tasks": "~0.2.0",
-    "grunt-autoprefixer": "~0.4.2",
-    "grunt-cli": "~0.1.11",
-    "grunt-contrib-compass": "~0.7.0"
-  }
+  "dependencies": {
+    "gulp": "~3.5.1",
+    "gulp-ruby-sass": "~0.3.0",
+    "gulp-autoprefixer": "0.0.6",
+    "gulp-minify-css": "~0.2.0",
+    "gulp-notify": "~0.4.0",
+    "gulp-load-plugins": "~0.2.0",
+    "gulp-rename": "~0.2.2",
+    "tiny-lr": "0.0.5",
+    "gulp-livereload": "~0.3.1",
+    "gulp-plumber": "~0.5.6"
+  },
 }
