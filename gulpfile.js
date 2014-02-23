@@ -17,8 +17,8 @@ gulp.task('default', function(){
 	    .pipe(gulp.dest(''))
 	    .pipe(rename({suffix: '.max'}))
 	    .pipe(minifycss())
-	    .pipe(rename({suffix: ''}))
-	    .pipe(gulp.dest(''))
+	    .pipe(rename({suffix: './'}))
+	    .pipe(gulp.dest('./'))
 	    .pipe(livereload(server));
 });
 
