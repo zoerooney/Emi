@@ -1,0 +1,188 @@
+/* Web fonts integration*/
+
+@mixin font-face($font-family, $file-path, $font-weight: normal, $font-style: normal) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+
+@include font-face(name1, 'inc/fonts/filename');
+@include font-face(name2, 'inc/fonts/filename');
+
+@mixin name1 {
+  font-family: 'name1', sans-serif;
+  font-weight: normal; font-style: normal; 
+}
+
+@mixin name2 {
+  font-family: 'name2', sans-serif;
+  font-weight: normal; font-style: normal; 
+}
+
+
+/* Styling starts here */
+
+body, input, textarea {
+	color: TEXTCOLOR;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.625;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	clear: both;
+}
+h1 {
+	
+}
+h2 {
+	
+}
+h3 {
+	
+}
+h4 {
+	
+}
+h5 {
+	
+}
+h6 {
+	
+}
+
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+/* Text elements */
+p {
+	margin-bottom: 1.5em;
+}
+ul, ol {
+	margin: 0 0 1.5em 2.5em;
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 1.5em;
+}
+dt {
+}
+dd {
+	margin-bottom: 1.5em;
+}
+strong {
+}
+em, i {
+	font-style: italic;
+}
+blockquote {
+	font-style: italic;
+	font-weight: normal;
+	margin: 0 3em;
+}
+blockquote em, blockquote i, blockquote cite {
+	font-style: normal;
+}
+cite {
+	color: #666;
+	letter-spacing: 0.05em;
+	padding-left: 60px;
+}
+pre {
+	background: #f4f4f4;
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+	overflow: auto;
+	padding: 0.75em 1.5em;
+}
+code, kbd {
+	font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym, dfn {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+address {
+	display: block;
+	margin: 0 0 1.5em;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+
+
+
+/* Links */
+a {
+	color: LINKCOLOR;
+	text-decoration: none;
+}
+a:focus,
+a:active,
+a:hover {
+	color: LINKHOVER;
+}
+
+
+
+
+/* Assistive text */
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+#access a.assistive-text:active,
+#access a.assistive-text:focus {
+	clip: auto !important;
+	font-size: 12px;
+	position: absolute;
+	text-decoration: underline;
+	top: 0;
+	left: 7.6%;
+}

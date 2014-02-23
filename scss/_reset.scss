@@ -1,0 +1,227 @@
+/* DEFAULT & RESET CSS*/
+
+/* Table of Contents
+==================================================
+  1 Generic Styles
+  2 Resets
+    A Global
+    B Media
+    C Forms
+  3 Typography
+  
+  
+  
+/* 1 GENERIC STYLES
+================================================== */
+/*Mash up based on
+  (A) the Bootstrap toolkit from Twitter http://twitter.github.com/bootstrap
+  (B) http://csswizardry.com/web-design+/#css
+  (C) WordPress image styles */
+
+html, body {
+	height: 100%;
+}
+
+div {
+  position: relative;
+}
+
+.clear {
+  clear: both;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+img {
+  &.alignleft {
+    margin-right: 1em;
+    margin-bottom: 1.8em;
+  }
+  &.alignright {
+    margin-left: 1em;
+    margin-bottom: 1.8em;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.half {
+  width: 45%;
+  /* Not exactly half to account for paddings, margins etc. */
+}
+
+ul.unstyled {
+  list-style-type: none;
+}
+
+.hide {
+  /* Hide stuff without resorting to display:none; */
+  visibility: hidden;
+  width: 0!important;
+  height: 0!important;
+  line-height: 0!important;
+  padding: 0!important;
+  margin: 0!important;
+}
+
+// clearfix
+// http://nicolasgallagher.com/micro-clearfix-hack/
+// http://css-tricks.com/snippets/css/clear-fix/
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 2 RESETS
+================================================== */
+
+/* 2A GLOBAL RESET
+Based on 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
+
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td, address, caption, cite, code, dfn, em, strong, th, var {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  /* Read more > http://bit.ly/qh1V0T */
+}
+
+caption, th {
+  text-align: center;
+}
+
+q {
+  &:before, &:after {
+    content: '';
+  }
+}
+
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* The below restores some sensible defaults */
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a img {
+  border: none;
+}
+
+/* Gets rid of IE's blue borders */
+
+/* 2B MEDIA
+Based on the Bootstrap toolkit from Twitter http://twitter.github.com/bootstrap */
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+/* 2C FORMS
+Based on the Bootstrap toolkit from Twitter http://twitter.github.com/bootstrap */
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input {
+  &[type="button"], &[type="reset"], &[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+  }
+  &[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    &::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* 3 TYPOGRAPHY
+================================================== */
+
+.alert {
+  background: red;
+  color: white;
+}
+
+/* 'alert' has a basic style, since it's useful to have it standing out for testing purposes. */

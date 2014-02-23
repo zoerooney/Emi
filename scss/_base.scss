@@ -1,0 +1,27 @@
+/*
+*= BASE VARIABLES
+*/
+
+// Sizes
+$width: 1000px;
+$width-outer: $width + 30px;
+
+// Colors
+$color-body: #555;
+$color-links: blue;
+$color-hover: red;
+
+// Fonts
+
+// Borders
+
+// Placeholders
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    width: 100%;
+    height: 0.1px;
+  }
+}

@@ -3,8 +3,8 @@
  * The Template for displaying all single posts.
  *
  * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
+ * @subpackage emi_theme
+ * @since Emi Theme 1.0
  */
 
 get_header(); ?>

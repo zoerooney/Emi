@@ -1,0 +1,42 @@
+body {
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+	min-width: $width-outer;
+}
+#page {
+	width: $width;
+	padding: 0 15px;
+}
+#main {
+	clear: both;
+	overflow: hidden;
+}
+// Sticky footer
+@include sticky-footer(50px, '#page','#main','#colophon');
+
+#primary {
+	float: left;
+	margin: 0;
+	width: 600px;	
+}
+#content {
+	margin: 0;
+	width: 100%;
+	float: left;
+}
+#primary.full-width,
+#primary.full-width #content {
+	width: 100%;
+	float: none;
+}
+#secondary {
+	float: right;
+	padding: 0;
+	width: 250px;
+}
+
+#colophon {
+	clear: both;
+	overflow: hidden;
+}

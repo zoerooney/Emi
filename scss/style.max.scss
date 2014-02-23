@@ -1,0 +1,55 @@
+/*!
+Theme Name: Emi Starter Theme
+Theme URI: https://github.com/zoerooney/Blank-Starter-Theme/
+Author: Zoe Rooney Web Development
+Author URI: http://zoerooney.com/
+Description: This is a clean WordPress starter theme cobbled together from a variety of resources over multiple years. Emi is intended to be used as a starting point for other WordPress themes, it is not meant to be a stand-alone theme in itself.
+Version 0.3
+License: The MIT License (MIT)
+License URI: http://opensource.org/licenses/MIT
+*/
+
+/* FONTS
+-------------------------- */
+// Uncomment/use this file if you install any custom fonts
+// @import "fonts/all";
+
+/* COMPASS
+-------------------------- */
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/typography/lists";
+@import "compass/typography/text";
+
+
+/* RESET & BASE
+------------------ */
+@import "reset";
+@import "mixins";
+@import "base";
+
+/* =LAYOUTS
+------------------ */
+@import "layout";
+@import "header";
+@import "nav";
+@import "footer";
+
+/* =CONTENT
+------------------ */
+@import "typography";
+@import "forms";
+
+/* =COMPONENTS
+------------------ */
+/* Includes password protection for pages and posts, 404 page */
+@import "components";
+
+
+/* =PROJECT PAGES SPECIFIC
+------------------ */
+@import "pages";
+
+/* =BLOG SPECIFIC
+------------------ */
+@import "blog/all";
