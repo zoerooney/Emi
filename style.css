@@ -370,6 +370,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: name2;
   src: url("inc/fonts/filename.eot");
@@ -377,6 +378,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
 /* Styling starts here */
 body, input, textarea {
   color: TEXTCOLOR;
