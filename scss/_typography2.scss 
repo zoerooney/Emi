@@ -1,7 +1,6 @@
 /*! A More Modern Scale For Web Typography Jason Pamental */
 $width-small: 43.75em;
 $width-medium: $width-medium;
-/*! A More Modern Scale For Web Typography Jason Pamental */
 
 body {
   font-size: 100%;
