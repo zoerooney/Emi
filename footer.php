@@ -4,9 +4,7 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package WordPress
- * @subpackage emi_theme
- * @since Emi Theme 1.0
+ * @package Emi_Starter_Theme
  */
 ?>
 
