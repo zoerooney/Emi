@@ -221,15 +221,20 @@ show_admin_bar( false );
 /**
  * ENQUEUE SCRIPTS
  */
-//function emitheme_scripts_method() {
+function emitheme_scripts_method() {
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+
 //	wp_enqueue_script(
 //		'newscript',
 //		get_template_directory_uri() . '/js/newscript.js',
 //		array('jquery')
 //	);
-//}    
-// 
-//add_action('wp_enqueue_scripts', 'emitheme_scripts_method');
+}    
+ 
+add_action('wp_enqueue_scripts', 'emitheme_scripts_method');
 
 
 /**
