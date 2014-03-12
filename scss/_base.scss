@@ -1,29 +1,27 @@
+/*
+*= BASE VARIABLES
+*/
+
+// Sizes
+$width: 1000px;
+$width-outer: $width + 30px;
+
+// Colors
 $color-body: #555;
 $color-links: blue;
 $color-hover: red;
 
-$width: 1000px;
-$width-outer: $width + 30px;
+// Fonts
 
-// sticky footer mixin
-@mixin sticky-footer($footer-height, $wrapper-selector: unquote("#wrapper"), $container-selector: unquote("#container"), $footer-selector: unquote("#footer")) {
-  html, body {
-    height: 100%;
-  }
-  body {
-  	margin: 0px;
-  	padding: 0px;
-  }
-  #{$wrapper-selector} {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin-bottom: -$footer-height;
-    #{$container-selector} {
-      padding: 0 0 $footer-height 0;
-    } 
-  }
-  #{$footer-selector} {
-    height: $footer-height; 
+// Borders
+
+// Placeholders
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    width: 100%;
+    height: 0.1px;
   }
 }
