@@ -2,9 +2,7 @@
 /**
  * The Sidebar containing the main widget area.
  *
- * @package WordPress
- * @subpackage emi_theme
- * @since Emi Theme 1.0
+ * @package Emi_Starter_Theme
  */
 
 ?>

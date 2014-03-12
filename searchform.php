@@ -2,9 +2,7 @@
 /**
  * The template for displaying search forms in Emi Theme
  *
- * @package WordPress
- * @subpackage emi_theme
- * @since Emi Theme 1.0
+ * @package Emi_Starter_Theme
  */
 ?>
 	<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">

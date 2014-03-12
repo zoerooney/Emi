@@ -4,9 +4,7 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package WordPress
- * @subpackage emi_theme
- * @since Emi Theme 1.0
+ * @package Emi_Starter_Theme
  */
 ?>
 
@@ -14,10 +12,10 @@
 
 </div><!-- #page -->
 <footer id="colophon" role="contentinfo">
-		<div id="site-generator">
-			&copy; <?php echo date('Y'); echo '&nbsp;'; echo bloginfo( 'name' ); ?><br>
-			Site by <a href="http://" target="_blank">DESIGNER</a> &amp; <a href="http://zoerooney.com" target="_blank">Development by Zoe Rooney</a>
-		</div>
+	<div id="site-generator">
+		&copy; <?php echo date('Y'); echo '&nbsp;'; echo bloginfo( 'name' ); ?><br>
+		site by <a href="http://" target="_blank" rel="nofollow">DESIGNER</a> &amp; <a href="http://zoerooney.com" target="_blank" rel="nofollow">Development by Zoe Rooney</a>
+	</div>
 </footer><!-- #colophon -->
 <?php wp_footer(); ?>
 

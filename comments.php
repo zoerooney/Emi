@@ -7,9 +7,7 @@
  * handled by a callback to emitheme_comment() which is
  * located in the functions.php file.
  *
- * @package WordPress
- * @subpackage emi_theme
- * @since Emi Theme 1.0
+ * @package Emi_Starter_Theme
  */
 ?>
 	<div id="comments">
