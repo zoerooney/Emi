@@ -4,12 +4,14 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
+    newer = require('gulp-newer'),
+    imagemin = require('gulp-imagemin'),
     notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
     lr = require('tiny-lr'),
     server = lr();
     
-gulp.task('default', function(){
+gulp.task('styles', function(){
 	return gulp.src('scss/style.scss')
 	    .pipe(plumber())
 	    .pipe(sass({ style: 'expanded' }))
@@ -18,7 +20,20 @@ gulp.task('default', function(){
 	    .pipe(minifycss())
 	    .pipe(gulp.dest(''))
 	    .pipe(livereload(server));
+	
 });
+
+gulp.task('images', function() {
+  var imgSrc = 'assets/images/originals/**';
+  var imgDest = 'assets/images';
+   
+  return gulp.src(imgSrc)
+        .pipe(newer(imgDest))
+        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+        .pipe(gulp.dest(imgDest));
+});
+
+gulp.task('default', ['styles', 'images']);
 
 gulp.task('watch', function() {
   // Listen on port 35729
@@ -28,7 +43,8 @@ gulp.task('watch', function() {
       };
   
       // Watch .scss files
-      gulp.watch('scss/*.scss', ['default']);
+      gulp.watch('scss/*.scss', ['styles']);
+      gulp.watch('assets/images/originals/**', ['images']);
   
     });
 

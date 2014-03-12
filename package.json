@@ -7,6 +7,7 @@
     "gulp-notify": "~0.4.0",
     "gulp-load-plugins": "~0.2.0",
     "gulp-rename": "~0.2.2",
+    "gulp-imagemin": "~0.1.5",
     "tiny-lr": "0.0.5",
     "gulp-livereload": "~0.3.1",
     "gulp-plumber": "~0.5.6"
