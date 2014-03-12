@@ -10,6 +10,9 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     lr = require('tiny-lr'),
     server = lr();
+
+var imgSrc = 'assets/images/originals/*';
+var imgDest = 'assets/images';
     
 gulp.task('styles', function(){
 	return gulp.src('scss/style.scss')
@@ -24,10 +27,9 @@ gulp.task('styles', function(){
 });
 
 gulp.task('images', function() {
-  var imgSrc = 'assets/images/originals/**';
-  var imgDest = 'assets/images';
+  
    
-  return gulp.src(imgSrc)
+  return gulp.src(imgSrc, {base: 'assets/images/originals'})
         .pipe(newer(imgDest))
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
         .pipe(gulp.dest(imgDest));
