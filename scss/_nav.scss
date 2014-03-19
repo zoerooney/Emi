@@ -1,48 +1,46 @@
-
 #access {
 	margin: 0;
+	div {
+		float: left;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+	ul {
+		clear: left;
+		float: left;
+		position: relative;
+		left: 50%;
+		padding-left: 0;
+		margin: 0 !important;
+		list-style: none;
+		li {
+			position: relative;
+			display: block;
+			float: left;
+			position: relative;
+			right: 50%;
+			a {
+				letter-spacing: 0.15em;
+				display: block;
+				padding: 3px 0 3px 10px;
+				margin: 2px 0;
+				text-decoration: none;
+				cursor: pointer;
+				&:after {
+					content: '/';
+					color: $text;
+				}
+				:hover {
+					color: $hover;
+				}
+			}
+			&:last-of-type a:after {
+				content: none;
+			}
+		}
+		
+		
+	}
+	
 }
-#access div {
-	float: left;
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-}
-#access ul {
-	clear: left;
-	float: left;
-	position: relative;
-	left: 50%;
-	padding-left: 0;
-	margin: 0 !important;
-	list-style: none;
-}
-#access li {
-	position: relative;
-	display: block;
-	float: left;
-	position: relative;
-	right: 50%;
-}
-#access a {
-	letter-spacing: 0.15em;
-	display: block;
-	padding: 3px 0 3px 10px;
-	margin: 2px 0;
-	text-decoration: none;
-	cursor: pointer;
-}
-#access li a:after {
-	content: '/';
-	color: TEXTCOLOR;
-}
-#access li:last-of-type a:after {
-	content: none;
-}
-#access li a span {
-	padding: 0 10px 0 0;
-}
-#access li a:hover {
-	color: LINKHOVER;
-}
-
