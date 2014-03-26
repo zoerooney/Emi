@@ -236,6 +236,17 @@ function emitheme_scripts_method() {
  
 add_action('wp_enqueue_scripts', 'emitheme_scripts_method');
 
+/**
+ * Move ACF Options Tab under settings and rename it
+ */
+if( function_exists('acf_add_options_sub_page') )
+{
+    acf_add_options_sub_page(array(
+        'title' => 'Site Options',
+        'parent' => 'options-general.php',
+        'capability' => 'manage_options'
+    ));
+}
 
 /**
  * Add TinyMCE buttons that are disabled by default
