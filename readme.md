@@ -25,3 +25,7 @@ This theme uses [Gulp](http://gulpjs.com/) to automate the following tasks:
 * Minifying CSS
 
 It also watches changes to files for use with [LiveReload](http://livereload.com/)
+
+Changelog
+------------
+1.0 Initial public release
