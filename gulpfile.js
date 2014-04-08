@@ -41,6 +41,7 @@ gulp.task('watch', function() {
   
       // Watch .scss files
       gulp.watch('scss/*.scss', ['styles']);
+      gulp.watch('scss/**/*.scss', ['styles']);
       gulp.watch('assets/images/originals/**', ['images']);
   
     });
