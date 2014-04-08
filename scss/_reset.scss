@@ -92,12 +92,21 @@ Based on 'reset.css' in the Yahoo! User Interface Library: http://developer.yaho
   margin: 0;
   padding: 0;
   border: 0;
-  font-style: normal;
   font-family: inherit;
-  font-size: 100%;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
   display: block;
 }
 
