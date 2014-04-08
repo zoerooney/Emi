@@ -3,10 +3,8 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
-    rename = require('gulp-rename'),
     newer = require('gulp-newer'),
     imagemin = require('gulp-imagemin'),
-    notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
     lr = require('tiny-lr'),
     server = lr();
@@ -15,7 +13,7 @@ var imgSrc = 'assets/images/originals/*';
 var imgDest = 'assets/images';
     
 gulp.task('styles', function(){
-	return gulp.src('scss/style.scss')
+	return gulp.src('scss/style.scss', {base: 'scss'})
 	    .pipe(plumber())
 	    .pipe(sass({ style: 'expanded' }))
 	    .pipe(gulp.dest(''))
@@ -23,12 +21,9 @@ gulp.task('styles', function(){
 	    .pipe(minifycss())
 	    .pipe(gulp.dest(''))
 	    .pipe(livereload(server));
-	
 });
 
 gulp.task('images', function() {
-  
-   
   return gulp.src(imgSrc, {base: 'assets/images/originals'})
         .pipe(newer(imgDest))
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
