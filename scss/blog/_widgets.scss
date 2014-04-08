@@ -1,70 +1,33 @@
-
 .widget {
 	clear: both;
 	margin: 0;
-	padding: 15px 0;
+	padding: 0 0 20px;
 }
 .widget-title {
-	color: LINKCOLOR;
-	font-size: 18px;
-	letter-spacing: 0.05em;
+	color: $text;
 	text-align: left;
 }
 .widget ul {
-	font-size: 15px;
 	margin: 0;
-}
-.widget ul ul {
-	margin-left: 1.5em;
-}
-.widget ul li {
+	ul {
+		margin-left: 1.5em;
+	}
 }
 
 /* Special Classes */
 .no-border {
 	border-bottom: none;
 	margin-bottom: 0;
-	padding:  15px 0 0;
+	padding:  0;
 }
 
 /* Search Widget */
-.widget_search form {
-	margin: 0 0 10px;
+.widget_search {
+	form {
+		margin: 0 0 10px;
+	}
+	#s {
+		width: 95%;
+		display: inline-block;
+	}
 }
-.widget_search #s {
-	width: 170px;
-	display: inline-block;
-}
-
-/* Widget Image */
-.widget_image img {
-	height: auto;
-	max-width: 100%;
-}
-
-/* Calendar Widget */
-
-.widget_calendar #wp-calendar {
-	color: TEXTCOLOR;
-	width: 95%;
-}
-.widget_calendar #wp-calendar caption,
-.widget_calendar #wp-calendar td,
-.widget_calendar #wp-calendar th {
-}
-.widget_calendar #wp-calendar caption {
-	font-size: 11px;
-	font-weight: 500;
-	padding: 5px 0 3px 0;
-}
-.widget_calendar #wp-calendar th {
-	background: #f4f4f4;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-}
-.widget_calendar #wp-calendar tfoot td {
-	background: #f4f4f4;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-}
-

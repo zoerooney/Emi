@@ -12,16 +12,16 @@ Text Domain: emi-starter-theme
 
 /* FONTS
 -------------------------- */
-// Uncomment/use this file if you install any custom fonts
-// @import "fonts/all";
+/* Uncomment/use this file if you install any custom fonts
+ @import "fonts/all";*/
 
 /* COMPASS
 -------------------------- */
-// Uncomment if using Compass
-// @import "compass/css3";
-// @import "compass/utilities";
-// @import "compass/typography/lists";
-// @import "compass/typography/text";
+/* Uncomment if using Compass
+ @import "compass/css3";
+ @import "compass/utilities";
+ @import "compass/typography/lists";
+ @import "compass/typography/text"; */
 
 /* RESET & BASE
 ------------------ */
@@ -49,7 +49,8 @@ Text Domain: emi-starter-theme
 
 /* =PROJECT PAGES SPECIFIC
 ------------------ */
-@import "pages";
+@import "content";
+@import "pages/all";
 
 /* =BLOG SPECIFIC
 ------------------ */

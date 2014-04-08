@@ -1,9 +1,8 @@
-#branding {
+#site-header {
 	margin-bottom: 45px;
 	position: relative;
-	z-index: 9999;
-}
-
-#branding img {
-	height: auto;
+	z-index: 250;
+	img {
+		height: auto;
+	}
 }

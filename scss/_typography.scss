@@ -79,15 +79,15 @@ ul {
 }
 ol {
 	list-style-type: decimal;
-}
-ol ol {
-	list-style: upper-alpha;
-}
-ol ol ol {
-	list-style: lower-roman;
-}
-ol ol ol ol {
-	list-style: lower-alpha;
+	ol {
+		list-style: upper-alpha;
+		ol {
+			list-style: lower-roman;
+		}
+		ol {
+			list-style: lower-alpha;
+		}
+	}	
 }
 ul ul, ol ol, ul ol, ol ul {
 	margin-bottom: 0;
@@ -126,10 +126,10 @@ pre {
 	padding: 0.75em 1.5em;
 }
 code, kbd {
-	font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 abbr, acronym, dfn {
-	border-bottom: 1px dotted #666;
+	border-bottom: $border;
 	cursor: help;
 }
 address {
@@ -161,14 +161,12 @@ sub {
 a {
 	color: $links;
 	text-decoration: none;
+	&:focus,
+	&:active,
+	&:hover {
+		color: $hover;
+	}
 }
-a:focus,
-a:active,
-a:hover {
-	color: $hover;
-}
-
-
 
 
 /* Assistive text */

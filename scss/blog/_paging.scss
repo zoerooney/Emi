@@ -17,9 +17,6 @@
 	text-align: right;
 	width: 50%;
 }
-#content nav .meta-nav {
-	font-weight: normal;
-}
 
 /* Singular navigation */
 #nav-single {
@@ -28,13 +25,12 @@
 	top: -0.3em;
 	text-align: right;
 	z-index: 1;
+	.nav-previous,
+	.nav-next {
+		float: none;
+		width: auto;
+	}
+	.nav-next {
+		padding-left: .5em;
+	}
 }
-#nav-single .nav-previous,
-#nav-single .nav-next {
-	float: none;
-	width: auto;
-}
-#nav-single .nav-next {
-	padding-left: .5em;
-}
-

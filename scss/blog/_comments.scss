@@ -1,89 +1,67 @@
-.comment-form-title {
-	margin:  30px 0 10px;
-}
 #comments-title {
 	padding: 0 0 2.6em;
 }
 .nopassword,
 .nocomments {
-	color: TEXTCOLOR;
+	color: $text;
 	font-size: 24px;
-	font-weight: 100;
 	margin: 26px 0;
 }
 .commentlist {
 	list-style: none;
 	margin: 0 auto;
 	width: 100%;
+	> li.comment {
+		position: relative;
+	}
+	pingback {
+		margin: 0 0 10px;
+		padding: 10px;
+	}
+	.children {
+		list-style: none;
+		margin: 0 0 10px 20px;
+		.children {
+			margin: 10px 0 10px 10px;
+		}
+		li.comment {
+			position: relative;
+		}
+	}
 }
-.content .commentlist,
-.page-template-sidebar-page-php .commentlist {
-	width: 100%; /* reset the width for the one-column and sidebar page layout */
-}
-.commentlist > li.comment {
-	background: #FFF;
-	position: relative;
-}
-.commentlist .pingback {
-	margin: 0 0 10px;
-	padding: 10px;
-}
-.commentlist .children {
-	list-style: none;
-	margin: 0 0 10px 20px;
-}
-.commentlist .children .children {
-	margin: 10px 0 10px 10px;
-}
-.commentlist .children li.comment {
-	background: #FFF;
-	position: relative;
-}
+
 article.comment {
-	border-bottom: 1px solid #EBE9E8;
+	border-bottom: $border;
 	padding: 10px 0;
+}
+.comment-meta {
+	margin-bottom: 12px;
+	.fn,
+	time {
+		font-style: normal;
+		display: block;
+		clear: right;
+		color: $text;
+	}
 }
 .avatar {
 	float: left;
 	padding-right: 10px;
 	vertical-align: bottom;
 }
-.comment-meta {
-	margin-bottom: 12px;
-}
-.comment-meta .fn, .comment-meta time {
-	font-style: normal;
-	display: block;
-	clear: right;
-	color: TEXTCOLOR;
-}
-.comment-content p {
-	margin-bottom: 1em;
-}
-.comment-content p:last-of-type {
-	margin-bottom: 0;
-}
-a.comment-reply-link {
-	color: LINKHOVER;
-	display: inline-block;
-	text-decoration: none;
-	margin-top: 10px;
+
+.comment-content {
+	p {
+		margin-bottom: 1em;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
 }
 
 /* Post author highlighting */
-.commentlist > li.bypostauthor .comment-content, .commentlist .children > li.bypostauthor .comment-content {
-	background: #FAF9F9;
-	padding: 5px 2px;
-}
-
-/* sidebar-page.php comments */
-/* Make sure we have room for our comment avatars */
-.page-template-sidebar-page-php .commentlist > li.comment,
-.page-template-sidebar-page-php.commentlist .pingback {
-	margin-left: 102px;
-	width: auto;
-}
-/* And a full-width comment form */
-.page-template-sidebar-page-php #respond {
-	width: auto;
+.commentlist > li.bypostauthor, 
+.commentlist .children > li.bypostauthor {
+	border: $border;
+	padding: 5px 10px;
 }

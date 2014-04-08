@@ -73,7 +73,7 @@
 		array(
 			 'title_reply' => '<div class="comment-form-title">Leave a Comment</div>',
 			 'comment_notes_before' => '',
-			 'label_submit' => 'SUBMIT COMMENT >',
+			 'label_submit' => 'SUBMIT',
 			 'comment_field' => '<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>',
 			 'fields' => $fields
 		 ) 

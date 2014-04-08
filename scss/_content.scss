@@ -1,0 +1,110 @@
+.hentry {
+	border-bottom: $border;
+	margin: 0 0 45px;
+	padding: 0 0 40px;
+	position: relative;
+	.page & {
+		border-bottom: none;
+	}
+}
+
+.entry-content,
+.entry-summary {
+	padding: 20px 0 0;
+}
+.entry-content {
+	table {
+		border-bottom: $border;
+		margin: 0 0 1.5em;
+		width: 100%;
+		td {
+			border-top: $border;
+			padding: 6px 10px 6px 0;
+		}
+	}
+	#s {
+		width: 75%;
+	}
+}
+.comment-content {
+	table {
+		border-bottom: $border;
+		margin: 0 0 1.5em;
+		width: 100%;
+		td {
+			border-top: $border;
+			padding: 6px 10px 6px 0;
+		}
+	}
+	#s {
+		width: 75%;
+	}
+
+}
+
+dl.gallery-item {
+	margin: 0;
+}
+
+
+/* Images & Embeds */
+embed
+iframe,
+object {
+	max-width: 100%;
+}
+img {
+	max-width: 100%;
+	&[class*="align"],
+	&[class*="wp-image-"],
+	&[class*="attachment-"] {
+		height: auto;
+	}
+	&.size-full,
+	&.size-large {
+		width: auto; /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */
+		height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+	}
+	&.alignleft,
+	&.alignright,
+	&.aligncenter {
+		margin-bottom: 1.5em;
+	}
+}
+
+/* Captions */
+.wp-caption {
+	max-width: 100%;
+	height: auto;
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
+	img {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		height: auto;
+	}
+	.wp-caption-text {
+		color: $text;
+		font-size: 85%;
+		margin-bottom: 0.5em;
+		padding: 5px 0;
+		position: relative;
+	}
+}
+
+/* Galleries */
+.gallery-caption {
+	color: LINKCOLOR;
+	font-size: 10px;
+}
+#content .gallery {
+	margin: 0 auto 1.5em;
+	a img {
+		border: none;
+	}
+}
+#content .gallery-columns-4 .gallery-item {
+	width: 23%;
+	padding-right: 2%;
+}
