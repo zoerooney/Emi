@@ -81,14 +81,6 @@ ul.unstyled {
   margin: 0!important;
 }
 
-// clearfix
-// http://nicolasgallagher.com/micro-clearfix-hack/
-// http://css-tricks.com/snippets/css/clear-fix/
-@mixin clearfix {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 /* 2 RESETS
 ================================================== */

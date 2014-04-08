@@ -30,8 +30,8 @@
 /* Styling starts here */
 
 body, input, textarea {
-	color: TEXTCOLOR;
-	font-family: sans-serif;
+	color: $text;
+	font-family: $main;
 	font-size: 14px;
 	line-height: 1.625;
 }
@@ -159,13 +159,13 @@ sub {
 
 /* Links */
 a {
-	color: LINKCOLOR;
+	color: $links;
 	text-decoration: none;
 }
 a:focus,
 a:active,
 a:hover {
-	color: LINKHOVER;
+	color: $hover;
 }
 
 

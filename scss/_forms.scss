@@ -1,34 +1,26 @@
-input[type=text],
-input[type=password],
+/* See _mixins.scss for more on this method for handling HTML5 elements */
+#{$all-text-inputs}, 
 textarea {
-	border: 1px solid TEXTCOLOR;
-	font-size: 13px;
-	height: 19px;
-	line-height: 1.2em;
+	border: $border;
 	padding: 4px 10px;
+	-webkit-appearance: none;
 }
-input[type=text]:focus,
+#{$all-text-inputs-focus},
 textarea:focus {
-	color: TEXTCOLOR;
+	color: $text;
 }
-textarea {
-	padding-left: 3px;
-	width: 98%;
+input[type=submit] {
+	-webkit-appearance: none;
 }
-input#s {
-	background: #FFF;
-	border: 1px solid TEXTCOLOR;
-	font-size: 13px;
-	height: 19px;
-	line-height: 1.2em;
-	padding: 4px 10px;
-}
-input#searchsubmit {
-	display: inline-block;
-	width: 33px;
-	height: 21px;
-	margin-left: 10px;
-}
+
+/* Placeholders */
 ::placeholder {
 	color: TEXTCOLOR;
 }
+
+/* Search form */
+input#s {
+}
+input#searchsubmit {
+}
+

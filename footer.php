@@ -12,7 +12,7 @@
 
 </div><!-- #page -->
 <footer id="colophon" role="contentinfo">
-	<div id="site-generator">
+	<div id="copyright">
 		&copy; <?php echo date('Y'); echo '&nbsp;'; echo bloginfo( 'name' ); ?><br>
 		site by <a href="http://" target="_blank" rel="nofollow">DESIGNER</a> &amp; <a href="http://zoerooney.com" target="_blank" rel="nofollow">Development by Zoe Rooney</a>
 	</div>

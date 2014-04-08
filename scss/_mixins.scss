@@ -10,7 +10,7 @@
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -$footer-height;
+    margin-bottom: -$footer-height;
     #{$container-selector} {
       padding: 0 0 $footer-height 0;
     } 
@@ -28,3 +28,45 @@
   &::-moz-placeholder { @content }   /* Firefox 19+ */
   &:-ms-input-placeholder {  @content }
 }
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    width: 100%;
+    height: 0.1px;
+  }
+}
+
+
+/************************************************************************
+ Borrowed from Bourbon: http://bourbon.io/docs/#html5-input-types
+
+ Generate a variable ($all-text-inputs) with a list of all html5 input types that have a text-based input, excluding textarea.
+ http://diveintohtml5.org/forms.html
+************************************************************************/
+$inputs-list: 'input[type="email"]',
+              'input[type="number"]',
+              'input[type="password"]',
+              'input[type="search"]',
+              'input[type="tel"]',
+              'input[type="text"]',
+              'input[type="url"]',
+
+              /* Webkit & Gecko may change the display of these in the future */
+              'input[type="color"]',
+              'input[type="date"]',
+              'input[type="datetime"]',
+              'input[type="datetime-local"]',
+              'input[type="month"]',
+              'input[type="time"]',
+              'input[type="week"]';
+
+/* Bare inputs */
+$all-text-inputs: assign-inputs($inputs-list);
+
+/* Hover Pseudo-class */
+$all-text-inputs-hover: assign-inputs($inputs-list, hover);
+
+/* Focus Pseudo-class */
+$all-text-inputs-focus: assign-inputs($inputs-list, focus);
