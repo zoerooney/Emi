@@ -20,15 +20,6 @@
   }
 }
 
-@mixin placeholder {
-  &.placeholder { @content }
-  &:-moz-placeholder { @content }
-  &::-webkit-input-placeholder { @content }
-  &:-moz-placeholder { @content }
-  &::-moz-placeholder { @content }   /* Firefox 19+ */
-  &:-ms-input-placeholder {  @content }
-}
-
 %clearfix {
   &:after {
     content: '';
@@ -45,6 +36,18 @@
  Generate a variable ($all-text-inputs) with a list of all html5 input types that have a text-based input, excluding textarea.
  http://diveintohtml5.org/forms.html
 ************************************************************************/
+@function assign-inputs($inputs, $pseudo: null) {
+  $list : ();
+
+  @each $input in $inputs {
+    $input: unquote($input);
+    $input: if($pseudo, $input + ":" + $pseudo, $input);
+    $list: append($list, $input, comma);
+  }
+
+  @return $list;
+}
+
 $inputs-list: 'input[type="email"]',
               'input[type="number"]',
               'input[type="password"]',
