@@ -20,7 +20,7 @@
 
 	<footer class="entry-meta">
 		
-		<?php the_tags( '<div class="post-tags">' . __( 'Tagged:', 'emi-starter-theme' ) , ', ', '</div>'; ?>
+		<?php the_tags( '<div class="post-tags">' . __( 'Tagged: ', 'emi-starter-theme' ) , ', ', '</div>' ); ?>
 		
 		<div class="comments-link">
 			<?php comments_popup_link( 
