@@ -19,12 +19,15 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
-		<span class="comments-link">
+		
+		<?php the_tags( '<div class="post-tags">' . __( 'Tagged:', 'emi-starter-theme' ) , ', ', '</div>'; ?>
+		
+		<div class="comments-link">
 			<?php comments_popup_link( 
 				 __( 'Leave a comment', 'emi-starter-theme' ), 
 				 __( '1 comment', 'emi-starter-theme' ), 
 				 __( '% comments', 'emi-starter-theme' ) ); 
 			?>
-		</span>
+		</div>
 	</footer><!-- #entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->
