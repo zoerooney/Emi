@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package Emi_Starter_Theme
+ * @package <%= themeHandle %>
  */
 ?>
 

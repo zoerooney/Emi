@@ -8,14 +8,15 @@ Set Up
 ------------
 I use [String Replacer](http://www.tensionsoftware.com/osx/stringreplacer/) (a Mac app) to find and replace the following strings, keeping the same general format as shown:
 
-`emi_theme` > `theme_name`
+`<%= themeName %>` > `Theme Name`
 
-`emitheme` > `themename`
+`<%= themeHandle %>` > `Theme_Name`
 
-`Emi Theme` > `Theme Name`
+`<%= themeFunction %>` > `theme_name`
 
-Then, add a screenshot and you're ready to start!
+`<%= themeTextDomain %>` > `theme-name`
 
+There are additional variables in `scss/styles.scss` you'll want to update one at a time, and a few in `footer.php` as well.
 
 Workflow
 ------------
@@ -28,5 +29,6 @@ It also watches changes to files for use with [LiveReload](http://livereload.com
 
 Changelog
 ------------
+1.2 Updated variables  
 1.1 General cleanup and tidying  
 1.0 Initial public release

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Emi Theme</title>
+	<title><%= themeName %></title>
 
-	<link rel="icon" type="image/ico" href="/wp-content/themes/emi-starter-theme/favicon.ico" />
+	<link rel="icon" type="image/ico" href="/wp-content/themes/<%= themeTextDomain %>/favicon.ico" />
 	<style type="text/css">
 	
 	body {
@@ -28,7 +28,7 @@
 </head>
 <body>
 	<div id="page">
-		<img src="/wp-content/themes/emi-starter-theme/assets/images/logo.png" alt="Emi Theme" id="logo" />
+		<img src="/wp-content/themes/<%= themeTextDomain %>/assets/images/logo.png" alt="<%= themeName %>" id="logo" />
 		COMING SOON
 	</div>
 </body>

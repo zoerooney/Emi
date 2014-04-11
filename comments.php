@@ -4,15 +4,15 @@
  *
  * The area of the page that contains both current comments
  * and the comment form. The actual display of comments is
- * handled by a callback to emitheme_comment() which is
+ * handled by a callback to <%= themeFunction %>_comment() which is
  * located in the functions.php file.
  *
- * @package Emi_Starter_Theme
+ * @package <%= themeHandle %>
  */
 ?>
 	<div id="comments">
 	<?php if ( post_password_required() ) : ?>
-		<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'emi-starter-theme' ); ?></p>
+		<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', '<%= themeTextDomain %>' ); ?></p>
 	</div><!-- #comments -->
 	<?php
 			/* Stop the rest of comments.php from being processed,
@@ -30,20 +30,17 @@
 		<ol class="commentlist">
 			<?php
 				/* Loop through and list the comments. Tell wp_list_comments()
-				 * to use emitheme_comment() to format the comments.
-				 * If you want to overload this in a child theme then you can
-				 * define emitheme_comment() and that will be used instead.
-				 * See emitheme_comment() in emitheme/functions.php for more.
+				 * See <%= themeFunction %>_comment() in inc/functions/comments.php for more.
 				 */
-				wp_list_comments( array( 'callback' => 'emi_starter_theme_comment' ) );
+				wp_list_comments( array( 'callback' => '<%= themeFunction %>_comment' ) );
 			?>
 		</ol>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below">
-			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'emi-starter-theme' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'emi-starter-theme' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'emi-starter-theme' ) ); ?></div>
+			<h1 class="assistive-text"><?php _e( 'Comment navigation', '<%= themeTextDomain %>' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', '<%= themeTextDomain %>' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', '<%= themeTextDomain %>' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -53,7 +50,7 @@
 		 */
 		elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="nocomments"><?php _e( 'Comments are closed.', 'emi-starter-theme' ); ?></p>
+		<p class="nocomments"><?php _e( 'Comments are closed.', '<%= themeTextDomain %>' ); ?></p>
 	<?php endif; ?>
 	
 	<?php 

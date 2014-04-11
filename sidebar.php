@@ -1,8 +1,8 @@
 <?php
 /**
- * The Sidebar containing the main widget area.
+ * The main sidebar
  *
- * @package Emi_Starter_Theme
+ * @package <%= themeHandle %>
  */
 
 ?>

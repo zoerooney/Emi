@@ -1,8 +1,8 @@
 <?php
 /**
- * The Template for displaying all single posts.
+ * Single post template
  *
- * @package Emi_Starter_Theme
+ * @package <%= themeHandle %>
  */
 
 get_header(); ?>

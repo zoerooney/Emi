@@ -4,7 +4,7 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package Emi_Starter_Theme
+ * @package <%= themeHandle %>
  */
 ?>
 
@@ -14,7 +14,8 @@
 <footer id="colophon" role="contentinfo">
 	<div id="copyright">
 		&copy; <?php echo date('Y'); echo '&nbsp;'; echo bloginfo( 'name' ); ?><br>
-		site by <a href="http://" target="_blank" rel="nofollow">DESIGNER</a> &amp; <a href="http://zoerooney.com" target="_blank" rel="nofollow">Development by Zoe Rooney</a>
+		Site by <a href="<%= themeDesignerURI %>" target="_blank" rel="nofollow"><%= themeDesigner %></a> &amp; 
+		<a href="<%= themeAuthorURI %>" target="_blank" rel="nofollow">Development by <%= themeAuthor %></a>
 	</div>
 </footer><!-- #colophon -->
 

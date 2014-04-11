@@ -2,7 +2,7 @@
 /**
  * Template Name: Full Width Page
  *
- * @package Emi_Starter_Theme
+ * @package <%= themeHandle %>
  */
 
 get_header(); ?>
