@@ -1,16 +1,16 @@
 <?php
 if ( ! function_exists( 'emitheme_comment' ) ) :
 /**
- * Template for comments and pingbacks.
+ * Comments & Pingbacks Template
  *
  * To override this walker in a child theme without modifying the comments template
- * simply create your own emitheme_comment(), and that function will be used instead.
+ * simply create your own emi_starter_theme_comment(), and that function will be used instead.
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  *
- * @since Emi Theme 1.0
+ * @package Emi_Starter_Theme
  */
-function emitheme_comment( $comment, $args, $depth ) {
+function emi_starter_theme_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
 		case 'pingback' :

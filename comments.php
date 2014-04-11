@@ -35,7 +35,7 @@
 				 * define emitheme_comment() and that will be used instead.
 				 * See emitheme_comment() in emitheme/functions.php for more.
 				 */
-				wp_list_comments( array( 'callback' => 'emitheme_comment' ) );
+				wp_list_comments( array( 'callback' => 'emi_starter_theme_comment' ) );
 			?>
 		</ol>
 
