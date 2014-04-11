@@ -13,7 +13,9 @@ get_header(); ?>
 <section id="primary" role="main">
 
 	<?php if ( have_posts() ) : ?>
-				
+		
+		<?php get_template_part( 'inc/archive-header' ); ?>
+		
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
