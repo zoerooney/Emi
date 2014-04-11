@@ -1,5 +1,5 @@
-Emi Starter Theme, Gulpified
-===========================
+Emi Starter Theme
+=================
 
 This is a clean WordPress starter theme cobbled together from a variety of resources over multiple years. Emi is intended to be used as a starting point for other WordPress themes, it is not meant to be a stand-alone theme in itself.
 
