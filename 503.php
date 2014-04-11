@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Emi Theme</title>
 
-	<link rel="icon" type="image/ico" href="/wp-content/themes/emitheme/favicon.ico" />
+	<link rel="icon" type="image/ico" href="/wp-content/themes/emi-starter-theme/favicon.ico" />
 	<style type="text/css">
 	
 	body {
@@ -28,7 +28,7 @@
 </head>
 <body>
 	<div id="page">
-		<img src="/wp-content/themes/emitheme/images/emitheme.png" alt="Emi Theme" id="logo" />
+		<img src="/wp-content/themes/emi-starter-theme/assets/images/logo.png" alt="Emi Theme" id="logo" />
 		COMING SOON
 	</div>
 </body>

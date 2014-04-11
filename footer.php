@@ -17,7 +17,7 @@
 		site by <a href="http://" target="_blank" rel="nofollow">DESIGNER</a> &amp; <a href="http://zoerooney.com" target="_blank" rel="nofollow">Development by Zoe Rooney</a>
 	</div>
 </footer><!-- #colophon -->
-<?php wp_footer(); ?>
 
+<?php wp_footer(); ?>
 </body>
 </html>

@@ -5,16 +5,15 @@
  * @package Emi_Starter_Theme
  */
 
-if (have_posts() {
-  while (have_posts()) {
-    the_post();
-    if ( get_field('url') ) :
-    $redirecturl = get_field('url');
-    wp_redirect($redirecturl);
-    exit;
-    else :
-    echo 'Your theme is not set up to use this template, or you have not specified a URL.';
-    endif;
-  }
-}
+if ( have_posts() ) :
+	while ( have_posts() ) : the_post();
+		if ( get_field('url') ) :
+			$redirecturl = get_field('url');
+			wp_redirect( $redirecturl );
+			exit;
+		else :
+			_e('Your theme is not set up to use this template, or you have not specified a URL.', 'emi-starter-theme');
+		endif;
+	endwhile;
+endif; 
 ?>

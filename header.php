@@ -6,13 +6,17 @@
  *
  * @package Emi_Starter_Theme
  */
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
+ 
 <!--[if lt IE 9]>
 <html id="ie" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?> xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
+<html <?php language_attributes(); ?>>
 <!--<![endif]-->
+
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width">
@@ -36,17 +40,18 @@
 </head>
  
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed">
-    <header id="site-header" role="banner">            
-            <h1>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" id="logo" alt="<?php bloginfo('name'); ?>" />
-                </a>
-            </h1>
-            <nav id="access" role="navigation">
-                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-            </nav><!-- #access -->  
-    </header><!-- #branding -->
- 
- 
-    <div id="main">
+<div id="page">
+   <header id="site-header" role="banner">            
+              <h1>
+                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                      <?php bloginfo('name'); ?>
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>" />
+                  </a>
+              </h1>
+              <nav id="access" role="navigation">
+                  <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+              </nav><!-- #access -->  
+      </header><!-- #branding -->
+   
+   
+      <div id="main">
