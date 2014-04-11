@@ -28,5 +28,5 @@ It also watches changes to files for use with [LiveReload](http://livereload.com
 
 Changelog
 ------------
-1.1 General cleanup and tidying
+1.1 General cleanup and tidying  
 1.0 Initial public release
