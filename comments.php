@@ -12,7 +12,7 @@
 ?>
 	<div id="comments">
 	<?php if ( post_password_required() ) : ?>
-		<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'emitheme' ); ?></p>
+		<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'emi-starter-theme' ); ?></p>
 	</div><!-- #comments -->
 	<?php
 			/* Stop the rest of comments.php from being processed,
@@ -41,9 +41,9 @@
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below">
-			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'emitheme' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'emitheme' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'emitheme' ) ); ?></div>
+			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'emi-starter-theme' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'emi-starter-theme' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'emi-starter-theme' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -53,7 +53,7 @@
 		 */
 		elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="nocomments"><?php _e( 'Comments are closed.', 'emitheme' ); ?></p>
+		<p class="nocomments"><?php _e( 'Comments are closed.', 'emi-starter-theme' ); ?></p>
 	<?php endif; ?>
 	
 	<?php 
