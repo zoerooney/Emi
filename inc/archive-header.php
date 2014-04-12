@@ -2,7 +2,7 @@
 /**
  * Archive header
  *
- * @package <%= themeHandle %>
+ * @package themeHandle
  */
 ?>
 <header class="archive-header">
@@ -17,18 +17,18 @@
 				single_tag_title();
 
 			elseif ( is_author() ) :
-				printf( __( 'Author: %s', '<%= themeTextDomain %>' ), '<span class="vcard">' . get_the_author() . '</span>' );
+				printf( __( 'Author: %s', 'themeTextDomain' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
 			elseif ( is_day() ) :
-				printf( __( 'Day: %s', '<%= themeTextDomain %>' ), '<span>' . get_the_date() . '</span>' );
+				printf( __( 'Day: %s', 'themeTextDomain' ), '<span>' . get_the_date() . '</span>' );
 
 			elseif ( is_month() ) :
-				printf( __( 'Month: %s', '<%= themeTextDomain %>' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', '<%= themeTextDomain %>' ) ) . '</span>' );
+				printf( __( 'Month: %s', 'themeTextDomain' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'themeTextDomain' ) ) . '</span>' );
 
 			elseif ( is_year() ) :
-				printf( __( 'Year: %s', '_s' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', '<%= themeTextDomain %>' ) ) . '</span>' );
+				printf( __( 'Year: %s', '_s' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'themeTextDomain' ) ) . '</span>' );
 			else :
-				_e( 'Archives', '<%= themeTextDomain %>' );
+				_e( 'Archives', 'themeTextDomain' );
 
 			endif;
 		?>

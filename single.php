@@ -2,7 +2,7 @@
 /**
  * Single post template
  *
- * @package <%= themeHandle %>
+ * @package themeHandle
  */
 
 get_header(); ?>

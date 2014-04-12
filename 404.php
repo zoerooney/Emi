@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (Not Found).
  *
- * @package <%= themeHandle %>
+ * @package themeHandle
  */
 
 get_header(); ?>
@@ -11,11 +11,11 @@ get_header(); ?>
 
 	<article id="post-0" class="post error404 not-found">
 		<header class="entry-header">
-			<h1 class="entry-title"><?php _e( 'Uh oh!', '<%= themeTextDomain %>' ); ?></h1>
+			<h1 class="entry-title"><?php _e( 'Uh oh!', 'themeTextDomain' ); ?></h1>
 		</header>
 
 		<div class="entry-content">
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps a search would help?', '<%= themeTextDomain %>' ); ?></p>
+			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps a search would help?', 'themeTextDomain' ); ?></p>
 
 			<?php get_search_form(); ?>
 
