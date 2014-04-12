@@ -8,13 +8,13 @@ Set Up
 ------------
 I use [String Replacer](http://www.tensionsoftware.com/osx/stringreplacer/) (a Mac app) to find and replace the following strings, keeping the same general format as shown:
 
-`<%= themeName %>` > `Theme Name`
+`themeName` > `Theme Name`
 
-`<%= themeHandle %>` > `Theme_Name`
+`themeHandle` > `Theme_Name`
 
-`<%= themeFunction %>` > `theme_name`
+`themeFunction` > `theme_name`
 
-`<%= themeTextDomain %>` > `theme-name`
+`themeTextDomain` > `theme-name`
 
 There are additional variables in `scss/styles.scss` you'll want to update one at a time, and a few in `footer.php` as well.
 
