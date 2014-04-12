@@ -1,13 +1,13 @@
 {
   "dependencies": {
-    "gulp": "~3.5.1",
-    "gulp-ruby-sass": "~0.3.0",
-    "gulp-autoprefixer": "0.0.6",
-    "gulp-minify-css": "~0.3.0",
-    "gulp-newer": "~0.3.0",
-    "gulp-imagemin": "~0.1.5",
-    "tiny-lr": "0.0.5",
-    "gulp-livereload": "~0.3.1",
-    "gulp-plumber": "~0.5.6"
+    "gulp": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-minify-css": "*",
+    "gulp-newer": "*",
+    "gulp-imagemin": "*",
+    "tiny-lr": "*",
+    "gulp-livereload": "*",
+    "gulp-plumber": "*"
   }
 }
