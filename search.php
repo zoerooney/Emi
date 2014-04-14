@@ -2,7 +2,7 @@
 /**
  * The template for displaying Search Results pages.
  *
- * @package themeHandle
+ * @package This_is_a_test
  */
 
 get_header(); ?>
@@ -12,7 +12,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 
 		<header class="page-header">
-			<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'themeTextDomain' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'this-is-a-test' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 		</header>
 
 		<?php /* Start the Loop */ ?>

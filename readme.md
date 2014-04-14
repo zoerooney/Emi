@@ -3,18 +3,20 @@ Emi Starter Theme
 
 This is a clean WordPress starter theme cobbled together from a variety of resources over multiple years. Emi is intended to be used as a starting point for other WordPress themes, it is not meant to be a stand-alone theme in itself.
 
+If you want to get even more automated, there's also a Yeoman generator that configures Emi for you: https://github.com/zoerooney/yo-emi
+
 
 Set Up
 ------------
 I use [String Replacer](http://www.tensionsoftware.com/osx/stringreplacer/) (a Mac app) to find and replace the following strings, keeping the same general format as shown:
 
-`themeName` > `Theme Name`
+`This is a test` > `Theme Name`
 
-`themeHandle` > `Theme_Name`
+`This_is_a_test` > `Theme_Name`
 
-`themeFunction` > `theme_name`
+`this_is_a_test` > `theme_name`
 
-`themeTextDomain` > `theme-name`
+`this-is-a-test` > `theme-name`
 
 There are additional variables in `scss/styles.scss` you'll want to update one at a time, and a few in `footer.php` as well.
 
