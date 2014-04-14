@@ -5,7 +5,7 @@
  * This file is used to display a page when nothing more specific matches a query.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package This_is_a_test
+ * @package themeHandle
  */
 
 get_header(); ?>

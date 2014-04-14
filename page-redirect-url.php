@@ -2,7 +2,7 @@
 /**
  * Template Name: Redirect to URL
  * 
- * @package This_is_a_test
+ * @package themeHandle
  */
 
 if ( have_posts() ) :
@@ -12,7 +12,7 @@ if ( have_posts() ) :
 			wp_redirect( $redirecturl );
 			exit;
 		else :
-			_e('Your theme is not set up to use this template, or you have not specified a URL.', 'this-is-a-test');
+			_e('Your theme is not set up to use this template, or you have not specified a URL.', 'themeTextDomain');
 		endif;
 	endwhile;
 endif; 

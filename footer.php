@@ -4,7 +4,7 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package This_is_a_test
+ * @package themeHandle
  */
 ?>
 
@@ -14,8 +14,8 @@
 <footer id="colophon" role="contentinfo">
 	<div id="copyright">
 		&copy; <?php echo date('Y'); echo '&nbsp;'; echo bloginfo( 'name' ); ?><br>
-		Site by <a href="Zoe Rooney Web DevelopmentURI" target="_blank" rel="nofollow">Zoe Rooney Web Development</a> &amp; 
-		<a href="Zoe Rooney Web DevelopmentURI" target="_blank" rel="nofollow">Development by Zoe Rooney Web Development</a>
+		Site by <a href="themeDesignerURI" target="_blank" rel="nofollow">themeDesigner</a> &amp; 
+		<a href="themeAuthorURI" target="_blank" rel="nofollow">themeAuthor</a>
 	</div>
 </footer><!-- #colophon -->
 

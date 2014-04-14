@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package This_is_a_test
+ * @package themeHandle
  */
 
 get_header(); ?>

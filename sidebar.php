@@ -2,7 +2,7 @@
 /**
  * The main sidebar
  *
- * @package This_is_a_test
+ * @package themeHandle
  */
 
 ?>
