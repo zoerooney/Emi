@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     newer = require('gulp-newer'),
     imagemin = require('gulp-imagemin'),
+    git = require('gulp-git'),
     livereload = require('gulp-livereload'),
     lr = require('tiny-lr'),
     server = lr();
@@ -47,3 +48,16 @@ gulp.task('watch', function() {
     });
 
 });
+gulp.task('init', function(){
+	git.init();
+});
+gulp.task('add', function(){
+	return gulp.src('./*')
+	.pipe(git.add());
+});
+gulp.task('commit', function(){
+	return gulp.src('./*')
+	.pipe(git.commit('initial commit'));
+	console.log('Style.css ready and files checked into version control!')
+});
+gulp.task('setup',['styles','init','add','commit']);

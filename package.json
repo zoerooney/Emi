@@ -6,6 +6,7 @@
     "gulp-minify-css": "*",
     "gulp-newer": "*",
     "gulp-imagemin": "*",
+    "gulp-git": "*",
     "tiny-lr": "*",
     "gulp-livereload": "*",
     "gulp-plumber": "*"
