@@ -54,8 +54,6 @@ gulp.task('init', function(){
 gulp.task('commit', function(){
 	return gulp.src('./*')
 	.pipe(git.add())
-	.pipe(git.commit('initial commit'));
-	
-	console.log('Style.css ready and files checked into version control!')
+	.pipe(git.commit('initial commit', {args: '-a'}));
 });
 gulp.task('setup',['styles','init','commit']);
