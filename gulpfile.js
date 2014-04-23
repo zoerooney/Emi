@@ -51,9 +51,12 @@ gulp.task('watch', function() {
 gulp.task('init', function(){
 	git.init();
 });
+gulp.task('add', function(){
+  return gulp.src('./*')
+  .pipe(git.add());
+});
 gulp.task('commit', function(){
 	return gulp.src('./*')
-	.pipe(git.add({args: '-A'}))
 	.pipe(git.commit('initial commit'));
 });
-gulp.task('setup',['styles','init','commit']);
+gulp.task('setup',['styles','init','add','commit']);
