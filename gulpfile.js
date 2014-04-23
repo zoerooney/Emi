@@ -53,6 +53,7 @@ gulp.task('init', function(){
 });
 gulp.task('commit', function(){
 	return gulp.src('./*')
-	.pipe(git.commit('initial commit', {args: '-a'}));
+	.pipe(git.add({args: '-A'}))
+	.pipe(git.commit('initial commit'));
 });
 gulp.task('setup',['styles','init','commit']);
