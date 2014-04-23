@@ -1,0 +1,75 @@
+/* Comment Form */
+#respond {
+	margin: 0 0 1.5em;
+	position: relative;
+	width: 100%;
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-url,
+	.comment-form-comment {
+		position: relative;
+		margin: 5px 0 0;
+		label {
+			color: $text;
+			display: inline-block;
+			padding: 0px 10px 8px;
+			position: relative;
+			z-index: 1;
+		}
+	}
+	#{$all-text-inputs}, 
+	textarea {
+		position: relative;
+		float: left;
+		display: inline-block;
+	}
+	#{$all-text-inputs} {
+		width: 255px;
+	}
+	textarea {
+		width: 90%;
+		min-height: 150px;
+		resize: vertical;
+	}
+	.form-submit {
+	  float: left;
+	  margin: 0 0;
+	}
+	input[type=submit] {
+		cursor: pointer;
+		margin: 10px 0;
+	}
+	.logged-in-as a {
+		color: $text;
+	}
+	p {
+		margin-bottom: 1em;
+	}
+}
+a.comment-reply-link {
+	color: $links;
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 10px;
+}
+#cancel-comment-reply-link {
+  color: $text;
+  display: block;
+  position: absolute;
+  right: 1.5em;
+  text-decoration: none;
+  top: 1.1em;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.commentlist #respond {
+  margin: 1.5em 0 0;
+  width: auto;
+}
+.form-allowed-tags {
+  display: none;
+}
+.comment-subscription-form {
+  clear: both;
+  display: block;
+}
