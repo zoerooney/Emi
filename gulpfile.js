@@ -58,4 +58,4 @@ gulp.task('commit', function(){
 	
 	console.log('Style.css ready and files checked into version control!')
 });
-gulp.task('setup',['styles','init','add','commit']);
+gulp.task('setup',['styles','init','commit']);
