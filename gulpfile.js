@@ -51,13 +51,11 @@ gulp.task('watch', function() {
 gulp.task('init', function(){
 	git.init();
 });
-gulp.task('add', function(){
-	return gulp.src('./*')
-	.pipe(git.add());
-});
 gulp.task('commit', function(){
 	return gulp.src('./*')
+	.pipe(git.add())
 	.pipe(git.commit('initial commit'));
+	
 	console.log('Style.css ready and files checked into version control!')
 });
 gulp.task('setup',['styles','init','add','commit']);
