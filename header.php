@@ -27,10 +27,9 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-    <!-- stylesheet -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
+    <!-- stylesheets are enqueued via functions.php -->
 
-    <!-- scripts -->
+    <!-- all other scripts are enqueued via functions.php -->
     <!--[if lt IE 9]>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/html5shiv.js" type="text/javascript"></script>
     <![endif]-->

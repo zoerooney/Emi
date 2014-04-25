@@ -63,9 +63,12 @@ function themeFunction_widgets_init() {
 add_action( 'widgets_init', 'themeFunction_widgets_init' );
 
 
-/* ENQUEUE SCRIPTS
+/* ENQUEUE SCRIPTS & STYLES
  ========================== */
-function themeFunction_scripts_method() {
+function themeFunction_scripts() {
+	// theme style.css file
+	wp_enqueue_style( 'themeTextDomain-style', get_stylesheet_uri() );
+	
 	// threaded comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -77,7 +80,7 @@ function themeFunction_scripts_method() {
 //		array('jquery')
 //	);
 }    
-add_action('wp_enqueue_scripts', 'themeFunction_scripts_method');
+add_action('wp_enqueue_scripts', 'themeFunction_script');
 
 
 /* MISC EXTRAS
