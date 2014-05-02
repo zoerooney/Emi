@@ -80,7 +80,7 @@ function themeFunction_scripts() {
 //		array('jquery')
 //	);
 }    
-add_action('wp_enqueue_scripts', 'themeFunction_script');
+add_action('wp_enqueue_scripts', 'themeFunction_scripts');
 
 
 /* MISC EXTRAS
