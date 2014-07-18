@@ -14,8 +14,12 @@ var imgSrc = 'assets/images/originals/*';
 var imgDest = 'assets/images';
     
 gulp.task('styles', function(){
-	return gulp.src('scss/style.scss', {base: 'scss'})
-	    .pipe(plumber())
+  return gulp.src(['scss/*.scss',
+                   'scss/_*.scss',
+                   'scss/**/_*.scss',
+                   'scss/**/*.scss'], 
+            {base: 'scss/'} )
+      .pipe(plumber())
 	    .pipe(sass({ style: 'expanded' }))
 	    .pipe(gulp.dest(''))
 	    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
