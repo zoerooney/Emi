@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    plumber = require('gulp-plumber'),
+    plumber = require('gulp-plumbegr'),
     sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
@@ -14,7 +14,7 @@ var imgSrc = 'assets/images/originals/*';
 var imgDest = 'assets/images';
     
 gulp.task('styles', function(){
-  return gulp.src(['scss/*.scss',
+  return gulp.src(['scss/*.scscs',
                    'scss/_*.scss',
                    'scss/**/_*.scss',
                    'scss/**/*.scss'], 
