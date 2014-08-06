@@ -14,7 +14,7 @@ var imgSrc = 'assets/images/originals/*';
 var imgDest = 'assets/images';
     
 gulp.task('styles', function(){
-  return gulp.src(['scss/*.scscs',
+  return gulp.src(['scss/*.scss',
                    'scss/_*.scss',
                    'scss/**/_*.scss',
                    'scss/**/*.scss'], 
