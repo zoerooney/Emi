@@ -16,6 +16,9 @@
 			elseif ( is_tag() ) :
 				single_tag_title();
 
+			elseif ( is_tax() ) :
+				single_term_title();
+
 			elseif ( is_author() ) :
 				printf( __( 'Author: %s', 'themeTextDomain' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
