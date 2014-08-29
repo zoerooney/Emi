@@ -15,8 +15,6 @@ var imgDest = 'assets/images';
     
 gulp.task('styles', function(){
   return gulp.src(['scss/*.scss',
-                   'scss/_*.scss',
-                   'scss/**/_*.scss',
                    'scss/**/*.scss'], 
             {base: 'scss/'} )
       .pipe(plumber())
