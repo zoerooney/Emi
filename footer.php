@@ -14,8 +14,8 @@
 <footer id="colophon" role="contentinfo">
 	<div id="copyright">
 		&copy; <?php echo date( 'Y' ); echo '&nbsp;'; echo bloginfo( 'name' ); ?><br>
-		Site by <a href="themeDesignerURI" target="_blank" rel="nofollow">themeDesigner</a> &amp;
-		<a href="themeAuthorURI" target="_blank" rel="nofollow">themeAuthor</a>
+		Site by <a href="designerURI" target="_blank" rel="nofollow">themeDesigner</a> &amp;
+		<a href="authorURI" target="_blank" rel="nofollow">themeAuthor</a>
 	</div>
 </footer><!-- #colophon -->
 
