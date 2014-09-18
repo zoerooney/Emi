@@ -39,18 +39,16 @@
 </head>
  
 <body <?php body_class(); ?>>
-<div id="page">
-   <header id="site-header" role="banner">            
-              <h1>
-                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>">  
-                      <!-- NO SVG <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>" /> -->
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/assets/images/logo.png'" alt="<?php bloginfo('name'); ?>">
-                  </a>
-              </h1>
-              <nav id="access" role="navigation">
-                  <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-              </nav><!-- #access -->  
-      </header><!-- #branding -->
-   
-   
-      <div id="main">
+	<div id="page">
+		<header id="site-header" role="banner">            
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/assets/images/logo.png'" alt="<?php bloginfo('name'); ?>">
+			</a>
+
+			<nav id="access" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav><!-- #access -->  
+		</header><!-- #branding -->
+
+
+		<div id="main">
