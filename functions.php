@@ -73,10 +73,16 @@ function themeFunction_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-	// custom scripts
+	// vendor scripts
 //	wp_enqueue_script(
-//		'newscript',
-//		get_template_directory_uri() . '/js/newscript.js',
+//		'vendor',
+//		get_template_directory_uri() . '/assets/vendor/newscript.js',
+//		array('jquery')
+//	);
+	// theme scripts
+//	wp_enqueue_script(
+//		'theme-init',
+//		get_template_directory_uri() . '/assets/theme.js',
 //		array('jquery')
 //	);
 }    
