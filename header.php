@@ -41,7 +41,7 @@
 <body <?php body_class(); ?>>
 	<div id="page">
 		<header id="site-header" role="banner">            
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
+			<a href="<?php echo esc_url( home_url() ); ?>/" class="logo">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/assets/images/logo.png'" alt="<?php bloginfo('name'); ?>">
 			</a>
 
