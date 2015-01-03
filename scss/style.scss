@@ -43,7 +43,13 @@ Text Domain: themeTextDomain
 ------------------ */
 @import "content";
 @import "pages/all";
+// Uncomment if you have a custom home page
+// @import "pages/home";
 
 /* =BLOG SPECIFIC
 ------------------ */
-@import "blog/all";
+@import "blog/paging";
+@import "blog/widgets";
+@import "blog/comments";
+@import "blog/content";
+@import "blog/comment_form";
