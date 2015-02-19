@@ -2,19 +2,19 @@ body {
 	background: $bg;
 	margin: 0;
 	padding: 0;
-	min-width: $width-outer;
 }
 #page {
-	width: $width;
+	width: 100%;
 	padding: 0 15px;
 }
 #main {
 	clear: both;
+	width: 100%;
+	@include clearfix;
 }
 #primary {
 	float: left;
 	margin: 0;
-	width: 600px;	
 }
 #content {
 	margin: 0;
@@ -35,5 +35,56 @@ body {
 	clear: both;
 	overflow: hidden;
 }
+
+// Grid System
+.row { 
+	@include clearfix;
+	clear: both;
+	padding-bottom: 0em;
+}
+.col { 
+	display: block;
+	float: left;
+	width: 100%;
+	margin-left: 2%;
+	@media (max-width: $xs){
+		margin-left: 0;
+	}
+	&:first-child,
+	&.pull-left {
+		margin-left: 0;
+	}
+}
+.span_1 { width: 6.5%; }
+.span_2 { width: 15.0%; }
+.span_3 { width: 23.5%; }
+.span_4 { width: 32.0%; }
+.span_5 { width: 40.5%; }
+.span_6 { width: 50.0%; }
+.span_7 { width: 57.5%; }
+.span_8 { width: 66.0%; }
+.span_9 { width: 74.5%; }
+.span_10 { width: 83.0%; }
+.span_11 { width: 91.5%; }
+.span_12 { width: 100%; }
+
+.span_1,
+.span_2,
+.span_3,
+.span_4,
+.span_5,
+.span_6,
+.span_7,
+.span_8,
+.span_9,
+.span_10,
+.span_11,
+.span_12 {
+	@media all and (max-width: $s){
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
 /* Sticky footer */
-@include sticky-footer(50px, '#page','#main','#colophon');
+@include sticky-footer( $footerheight, '#page','#main','#colophon');

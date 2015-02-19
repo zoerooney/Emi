@@ -2,8 +2,9 @@
  *******************/
 
 /* Sizes */
-$width: 1000px;
-$width-outer: $width + 30px;
+$max-width: 1800px;
+$inset-text-max-width: 860px;
+$footerheight: 50px;
 
 /* Colors */
 $text: #555;
@@ -17,3 +18,9 @@ $main: sans-serif;
 
 /* Borders */
 $border: 1px solid #000;
+
+/* Breakpoints */
+$cap: 1920px;
+$m: 850px;
+$s: 740px;
+$xs: 500px;
