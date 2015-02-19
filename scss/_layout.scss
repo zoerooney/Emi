@@ -37,6 +37,11 @@ body {
 }
 
 // Grid System
+.container {
+	width: 95%;
+	max-width: $width;
+	margin: 0 auto;
+}
 .row { 
 	@include clearfix;
 	clear: both;
