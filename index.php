@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<section id="primary" role="main">
+<section id="primary" role="main" class="col pull-left span_8">
 
 	<?php if ( have_posts() ) : ?>
 				

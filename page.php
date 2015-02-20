@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<section id="primary" role="main">
+<section id="primary" role="main" class="col pull-left span_8">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

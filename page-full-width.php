@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<section id="primary" class="full-width" role="main">
+<section id="primary" class="row" role="main">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 	

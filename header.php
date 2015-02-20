@@ -40,7 +40,7 @@
  
 <body <?php body_class(); ?>>
 	<div id="page">
-		<header id="site-header" role="banner">            
+		<header id="site-header" role="banner" class="row">            
 			<a href="<?php echo esc_url( home_url() ); ?>/" class="logo">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/assets/images/logo.png'" alt="<?php bloginfo('name'); ?>">
 			</a>
@@ -51,4 +51,4 @@
 		</header><!-- #branding -->
 
 
-		<div id="main">
+		<div id="main" class="row">
