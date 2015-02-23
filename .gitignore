@@ -11,13 +11,13 @@
 *~
 
 #OS folders
-.DS_Store
-._*
+*.DS_Store
+*._*
 Thumbs.db
-.cache
-.project
-.settings
-.tmproj
+*.cache
+*.project
+*.settings
+*.tmproj
 *.esproj
 *.sass-cache
 *.ruby-version
