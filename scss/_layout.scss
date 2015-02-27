@@ -16,7 +16,7 @@ body {
 // Grid System
 .container {
 	width: 95%;
-	max-width: $width;
+	max-width: $min-width;
 	margin: 0 auto;
 }
 .col { 
