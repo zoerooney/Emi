@@ -15,7 +15,7 @@ gulp.task('styles', function(){
 			console.error('Error!', err.message);
 		})
 		.pipe(gulp.dest(''))
-		.pipe(autoprefixer()
+		.pipe(autoprefixer())
 		.pipe(minifycss())
 		.pipe(gulp.dest(''))
 		.pipe(livereload());
