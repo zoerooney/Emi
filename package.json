@@ -10,9 +10,6 @@
     "gulp-minify-css": "*",
     "gulp-newer": "*",
     "gulp-imagemin": "*",
-    "gulp-git": "~0.4.0",
-    "tiny-lr": "*",
-    "gulp-livereload": "*",
-    "gulp-plumber": "*"
+    "gulp-livereload": "*"
   }
 }
