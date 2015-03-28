@@ -8,6 +8,8 @@
     "gulp-ruby-sass": "*",
     "gulp-autoprefixer": "*",
     "gulp-minify-css": "*",
+    "gulp-newer": "*",
+    "gulp-imagemin": "*",
     "gulp-livereload": "*"
   }
 }
